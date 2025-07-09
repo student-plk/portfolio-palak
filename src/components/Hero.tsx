@@ -67,12 +67,19 @@ const Hero = () => {
 
           {/* Right content - Profile photo */}
           <div className="flex justify-center lg:justify-end">
-            <div className="professional-frame flower-hover-effect">
+            <div className="professional-frame flower-hover-effect border-2 border-violet-400 rounded-2xl transition-shadow duration-300">
               <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl relative">
                 <img
                   src={profileImg}
                   alt="Palak Saini"
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500 z-10 relative"
+                  className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-500 z-10 relative"
+                  onMouseEnter={() => {
+                    const flower = document.querySelector('.flower-effect');
+                    if (flower && !flower.classList.contains('animate-flower')) {
+                      flower.classList.add('animate-flower');
+                      setTimeout(() => flower.classList.remove('animate-flower'), 1200);
+                    }
+                  }}
                 />
                 {/* Flower effect container */}
                 <div className="flower-effect absolute inset-0 pointer-events-none"></div>

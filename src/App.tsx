@@ -46,12 +46,7 @@ function App() {
         </div>
 
         {/* Theme toggle button */}
-        <button
-          onClick={toggleDarkMode}
-          className="fixed top-4 right-4 z-50 p-3 rounded-full bg-violet-600 text-white shadow-lg hover:bg-violet-700 transition-all duration-300 hover:scale-110"
-        >
-          {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-        </button>
+        {/* Removed theme toggle button as per user request */}
 
         <Header />
         <main className="relative z-10">
