@@ -68,7 +68,7 @@ const Contact = () => {
           <div className="professional-divider mx-auto max-w-xs"></div>
         </div>
 
-        <div className="symmetric-grid-2">
+        <div className="symmetric-grid-2 items-stretch">
           {/* Contact Information */}
           <div className="scroll-reveal space-y-8 border-2 contact-border-0">
             <div>
@@ -98,7 +98,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">Location</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Bhopal, Madhya Pradesh</p>
+                  <p className="text-gray-600 dark:text-gray-300">Harda, Madhya Pradesh</p>
                 </div>
               </div>
             </div>
