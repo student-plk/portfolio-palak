@@ -90,9 +90,6 @@ const Skills = () => {
                     }}
                   ></div>
                 </div>
-                <span className="text-sm text-gray-600 dark:text-gray-400 font-medium">
-                  {skill.level}%
-                </span>
               </div>
             </div>
           ))}
