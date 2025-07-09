@@ -492,13 +492,7 @@ body {
 
 /* Neon blink effect for About Me box */
 .about-border-0:hover {
-  animation: neon-blink-box 1s infinite alternate;
-  box-shadow: 0 0 16px #a78bfa, 0 0 32px #f472b6, 0 0 48px #facc15;
   border-color: #a78bfa;
-}
-@keyframes neon-blink-box {
-  0% { box-shadow: 0 0 8px #a78bfa, 0 0 16px #f472b6, 0 0 24px #facc15; border-color: #a78bfa; }
-  100% { box-shadow: 0 0 16px #facc15, 0 0 32px #a78bfa, 0 0 48px #f472b6; border-color: #facc15; }
 }
 
 /* Unique border colors for Projects section boxes */
