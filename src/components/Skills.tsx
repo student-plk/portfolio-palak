@@ -80,17 +80,7 @@ const Skills = () => {
                 {skill.name}
               </h3>
               
-              <div className="relative">
-                <div className="skill-bar mb-2">
-                  <div 
-                    className="skill-progress"
-                    style={{ 
-                      width: `${skill.level}%`,
-                      transitionDelay: `${index * 200}ms`
-                    }}
-                  ></div>
-                </div>
-              </div>
+              {/* Removed the skill bar and progress line */}
             </div>
           ))}
         </div>
