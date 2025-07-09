@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { ChevronDown, Download, Linkedin, Github, Mail } from 'lucide-react';
+import profileImg from '../assets/profile.jpeg';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -69,7 +70,7 @@ const Hero = () => {
             <div className="professional-frame flower-hover-effect">
               <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl relative">
                 <img
-                  src="/src/assets/profile.jpeg"
+                  src={profileImg}
                   alt="Palak Saini"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500 z-10 relative"
                 />
