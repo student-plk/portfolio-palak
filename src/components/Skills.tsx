@@ -59,7 +59,7 @@ const Skills = () => {
     <section id="skills" ref={skillsRef} className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
             Skills & Technologies
           </h2>
           <div className="professional-divider mx-auto max-w-xs"></div>
@@ -69,7 +69,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className={`scroll-reveal professional-card p-8 text-center transition-all duration-300 group`}
+              className={`scroll-reveal professional-card p-8 text-center transition-all duration-300 group border-2 skills-border-${index}`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className={`w-20 h-20 rounded-2xl bg-gradient-to-r ${skill.color} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>

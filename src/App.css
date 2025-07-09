@@ -469,3 +469,45 @@ body {
 .professional-frame img {
   object-position: top center;
 }
+
+/* Neon blinking effect for section titles */
+.neon-blink-title {
+  transition: color 0.2s;
+}
+.neon-blink-title:hover {
+  animation: neon-blink 1s infinite alternate;
+  color: #a78bfa;
+  text-shadow: 0 0 8px #a78bfa, 0 0 16px #f472b6, 0 0 24px #facc15;
+}
+@keyframes neon-blink {
+  0% { color: #a78bfa; text-shadow: 0 0 8px #a78bfa, 0 0 16px #f472b6, 0 0 24px #facc15; }
+  100% { color: #facc15; text-shadow: 0 0 16px #facc15, 0 0 32px #a78bfa, 0 0 48px #f472b6; }
+}
+
+/* Unique border colors for About section boxes */
+.about-border-0 { border-color: #a78bfa; }
+.about-border-1 { border-color: #38bdf8; }
+.about-border-2 { border-color: #34d399; }
+.about-border-3 { border-color: #f472b6; }
+
+/* Unique border colors for Projects section boxes */
+.projects-border-0 { border-color: #a78bfa; }
+.projects-border-1 { border-color: #38bdf8; }
+.projects-border-2 { border-color: #34d399; }
+
+/* Unique border colors for Skills section boxes */
+.skills-border-0 { border-color: #f59e42; }
+.skills-border-1 { border-color: #d946ef; }
+.skills-border-2 { border-color: #38bdf8; }
+.skills-border-3 { border-color: #34d399; }
+.skills-border-4 { border-color: #a78bfa; }
+
+/* Unique border colors for Tools section boxes */
+.tools-border-0 { border-color: #38bdf8; }
+.tools-border-1 { border-color: #64748b; }
+.tools-border-2 { border-color: #06b6d4; }
+.tools-border-3 { border-color: #f87171; }
+
+/* Unique border colors for Contact section boxes */
+.contact-border-0 { border-color: #a78bfa; }
+.contact-border-1 { border-color: #f472b6; }

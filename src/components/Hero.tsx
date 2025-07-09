@@ -129,7 +129,9 @@ const Hero = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <div className="flex flex-col items-center space-y-2">
             <span className="text-sm text-gray-500 dark:text-gray-400">Scroll down</span>
-            <ChevronDown className="h-6 w-6 text-violet-600 bounce-hint" />
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-gray-900 border-2 border-violet-400 shadow-md">
+              <ChevronDown className="h-6 w-6 text-violet-600 bounce-hint" />
+            </div>
           </div>
         </div>
       </div>

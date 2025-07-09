@@ -57,7 +57,7 @@ const Tools = () => {
     <section id="tools" ref={toolsRef} className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
             Tools
           </h2>
           <div className="professional-divider mx-auto max-w-xs"></div>
@@ -67,7 +67,7 @@ const Tools = () => {
           {tools.map((tool, index) => (
             <div
               key={index}
-              className={`scroll-reveal professional-card p-8 transition-all duration-300 group`}
+              className={`scroll-reveal professional-card p-8 transition-all duration-300 group border-2 tools-border-${index}`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex flex-col items-center justify-center text-center space-y-4 h-full">

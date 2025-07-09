@@ -53,7 +53,7 @@ const About = () => {
     <section id="about" ref={aboutRef} className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
             About Me
           </h2>
           <div className="professional-divider mx-auto max-w-xs"></div>
@@ -63,7 +63,7 @@ const About = () => {
           {aboutData.map((item, index) => (
             <div
               key={index}
-              className={`scroll-reveal professional-card p-8 transition-all duration-300`}
+              className={`scroll-reveal professional-card p-8 transition-all duration-300 border-2 about-border-${index}`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${item.gradient} flex items-center justify-center mb-6`}>

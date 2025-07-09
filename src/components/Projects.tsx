@@ -50,7 +50,7 @@ const Projects = () => {
     <section id="projects" ref={projectsRef} className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
             Projects
           </h2>
           <div className="professional-divider mx-auto max-w-xs"></div>
@@ -60,7 +60,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`scroll-reveal professional-card overflow-hidden transition-all duration-300`}
+              className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border-2 projects-border-${index}`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative overflow-hidden">
