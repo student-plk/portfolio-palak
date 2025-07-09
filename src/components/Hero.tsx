@@ -54,10 +54,7 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-medium rounded-2xl hover:from-violet-700 hover:to-purple-700 transition-all duration-300 hover:scale-105 shadow-lg">
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
-              </button>
+              {/* Removed Download Resume button */}
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="inline-flex items-center px-8 py-3 border-2 border-violet-600 text-violet-600 dark:text-violet-400 font-medium rounded-2xl hover:bg-violet-600 hover:text-white transition-all duration-300 hover:scale-105"
@@ -69,13 +66,15 @@ const Hero = () => {
 
           {/* Right content - Profile photo */}
           <div className="flex justify-center lg:justify-end">
-            <div className="professional-frame">
-              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="professional-frame flower-hover-effect">
+              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl relative">
                 <img
-                  src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  src="/src/assets/profile.jpeg"
                   alt="Palak Saini"
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500 z-10 relative"
                 />
+                {/* Flower effect container */}
+                <div className="flower-effect absolute inset-0 pointer-events-none"></div>
               </div>
             </div>
           </div>
