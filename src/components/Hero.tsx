@@ -89,7 +89,7 @@ const Hero = () => {
         </div>
 
         {/* Social Icons Section */}
-        <div className="flex justify-center items-center mt-16 space-x-8">
+        <div className="flex justify-center items-center mt-16 gap-x-12">
           <div className="social-icon-container">
             <a
               href="https://www.linkedin.com/in/palak-saini-7868b921b"
@@ -101,7 +101,6 @@ const Hero = () => {
             </a>
             <div className="social-label">LinkedIn</div>
           </div>
-
           <div className="social-icon-container">
             <a
               href="mailto:palaks2598@gmail.com"
@@ -111,7 +110,6 @@ const Hero = () => {
             </a>
             <div className="social-label">Email</div>
           </div>
-
           <div className="social-icon-container">
             <a
               href="https://github.com/student-plk"
