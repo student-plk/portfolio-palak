@@ -1,0 +1,134 @@
+import React, { useEffect, useRef } from 'react';
+import { ChevronDown, Download, Linkedin, Github, Mail } from 'lucide-react';
+
+const Hero = () => {
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Create animated background particles
+    const createParticles = () => {
+      const container = document.querySelector('.animated-background');
+      if (!container) return;
+
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 15 + 's';
+        particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        container.appendChild(particle);
+      }
+    };
+
+    createParticles();
+  }, []);
+
+  return (
+    <>
+      <div className="animated-background"></div>
+      <section 
+        ref={heroRef}
+        className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 gradient-bg"
+      >
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left content */}
+          <div className="text-center lg:text-left space-y-6">
+            <div className="space-y-4">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
+                Hi, I am{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">
+                  Palak Saini
+                </span>
+              </h1>
+              <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 font-medium">
+                Tech Intern at{' '}
+                <span className="text-violet-600 dark:text-violet-400">
+                  LinuxWorld Informatics Pvt Ltd
+                </span>
+              </p>
+              <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl">
+                Enthusiastic about Full Stack Development, DevOps, Machine Learning, and Agentic AI. 
+                Passionate about building innovative solutions through automation and cutting-edge technology.
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <button className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-medium rounded-2xl hover:from-violet-700 hover:to-purple-700 transition-all duration-300 hover:scale-105 shadow-lg">
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </button>
+              <button 
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="inline-flex items-center px-8 py-3 border-2 border-violet-600 text-violet-600 dark:text-violet-400 font-medium rounded-2xl hover:bg-violet-600 hover:text-white transition-all duration-300 hover:scale-105"
+              >
+                Get In Touch
+              </button>
+            </div>
+          </div>
+
+          {/* Right content - Profile photo */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="professional-frame">
+              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Palak Saini"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Social Icons Section */}
+        <div className="flex justify-center items-center mt-16 space-x-8">
+          <div className="social-icon-container">
+            <a
+              href="https://www.linkedin.com/in/palak-saini-7868b921b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
+              <Linkedin className="h-8 w-8 text-white" />
+            </a>
+            <div className="social-label">LinkedIn</div>
+          </div>
+
+          <div className="social-icon-container">
+            <a
+              href="mailto:palaks2598@gmail.com"
+              className="social-icon"
+            >
+              <Mail className="h-8 w-8 text-white" />
+            </a>
+            <div className="social-label">Email</div>
+          </div>
+
+          <div className="social-icon-container">
+            <a
+              href="https://github.com/student-plk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
+              <Github className="h-8 w-8 text-white" />
+            </a>
+            <div className="social-label">GitHub</div>
+          </div>
+        </div>
+
+        {/* Scroll hint */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="flex flex-col items-center space-y-2">
+            <span className="text-sm text-gray-500 dark:text-gray-400">Scroll down</span>
+            <ChevronDown className="h-6 w-6 text-violet-600 bounce-hint" />
+          </div>
+        </div>
+      </div>
+    </section>
+    </>
+  );
+};
+
+export default Hero;
