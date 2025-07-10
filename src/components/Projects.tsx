@@ -71,11 +71,12 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
-      title: "Machine Learning Model",
-      description: "Developed and deployed ML models for data analysis and prediction using Python and modern ML frameworks.",
-      stack: ["Python", "TensorFlow", "Pandas", "Scikit-learn"],
+      title: "AI-Powered Disease Assistant WebApp",
+      description: "Intelligent disease prediction system using machine learning models with 95% accuracy for early disease detection and healthcare assistance.",
+      stack: ["Machine Learning", "Python", "WebApp", "Healthcare AI", "95% Accuracy"],
       gradient: "from-orange-600 to-red-600",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_internshipjourney-project3-ai-activity-7345183466516271105-9l4s?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     }
   ];
 
