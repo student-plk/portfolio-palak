@@ -56,6 +56,14 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
+      title: "EVENT PASS - Music Festival Booking",
+      description: "Interactive music festival ticket booking webapp with real-time availability, pricing, and seamless booking experience.",
+      stack: ["Streamlit", "Python", "WebApp", "Event Booking", "UI/UX"],
+      gradient: "from-pink-600 to-rose-600",
+      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-streamlit-webappdevelopment-activity-7342855025926230016-qENi?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
       title: "Python WhatsApp Automation",
       description: "Automated WhatsApp messaging system built with Python for efficient communication and task automation.",
       stack: ["Python", "WhatsApp API", "Automation", "Selenium"],
