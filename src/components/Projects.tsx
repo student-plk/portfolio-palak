@@ -79,6 +79,14 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
+      title: "Python Menu-Based RHEL Project",
+      description: "Interactive menu-driven system for RHEL administration with root access capabilities and system management features.",
+      stack: ["Python", "RHEL", "Linux Admin", "Root Access", "System Management"],
+      gradient: "from-yellow-600 to-orange-600",
+      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_pythonlearning-rhel-rootaccess-activity-7342642753207427073-sIgG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
       title: "AI-Powered Disease Assistant WebApp",
       description: "Intelligent disease prediction system using machine learning models with 95% accuracy for early disease detection and healthcare assistance.",
       stack: ["Machine Learning", "Python", "WebApp", "Healthcare AI", "95% Accuracy"],
