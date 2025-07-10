@@ -41,6 +41,14 @@ const Projects = () => {
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
     {
+      title: "Agentic AI with Twilio & LangChain",
+      description: "Voice automation system using Twilio and LangChain for intelligent conversational AI with real-time voice processing capabilities.",
+      stack: ["Twilio", "LangChain", "Python", "Voice AI", "Automation"],
+      gradient: "from-indigo-600 to-blue-600",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_twilio-langchain-voiceautomation-activity-7347595930780495872--pjA?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
       title: "Full Stack Web Application",
       description: "A comprehensive web application built with modern technologies including React, Node.js, and database integration.",
       stack: ["React", "Node.js", "MongoDB", "Express"],
