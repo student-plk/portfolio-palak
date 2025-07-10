@@ -9,6 +9,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  background: linear-gradient(135deg, #181c2a 0%, #2d225a 60%, #8b5cf6 100%);
 }
 
 /* Animated background particles */

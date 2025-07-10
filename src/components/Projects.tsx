@@ -1,6 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import { Github, ExternalLink, Code } from 'lucide-react';
 
+interface Project {
+  title: string;
+  description: string;
+  stack: string[];
+  gradient: string;
+  image: string;
+  link?: string;
+}
+
 const Projects = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
 
@@ -17,31 +26,39 @@ const Projects = () => {
     );
 
     const elements = projectsRef.current?.querySelectorAll('.scroll-reveal');
-    elements?.forEach((el) => observer.observe(el));
+    elements?.forEach((el: Element) => observer.observe(el));
 
     return () => observer.disconnect();
   }, []);
 
-  const projects = [
+  const projects: Project[] = [
+    {
+      title: "JavaScript Web Integration",
+      description: "Advanced web development project featuring geolocation services and modern JavaScript integration techniques.",
+      stack: ["JavaScript", "Web Development", "Geolocation", "HTML/CSS"],
+      gradient: "from-violet-600 to-purple-600",
+      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
     {
       title: "Full Stack Web Application",
       description: "A comprehensive web application built with modern technologies including React, Node.js, and database integration.",
       stack: ["React", "Node.js", "MongoDB", "Express"],
-      gradient: "from-violet-600 to-purple-600",
-      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400"
+      gradient: "from-blue-600 to-cyan-600",
+      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
       title: "DevOps Automation Pipeline",
       description: "Automated CI/CD pipeline implementation using modern DevOps tools and practices for seamless deployment.",
       stack: ["Docker", "Jenkins", "Kubernetes", "Git"],
-      gradient: "from-blue-600 to-cyan-600",
-      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400"
+      gradient: "from-emerald-600 to-teal-600",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
       title: "Machine Learning Model",
       description: "Developed and deployed ML models for data analysis and prediction using Python and modern ML frameworks.",
       stack: ["Python", "TensorFlow", "Pandas", "Scikit-learn"],
-      gradient: "from-emerald-600 to-teal-600",
+      gradient: "from-orange-600 to-red-600",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
     }
   ];
@@ -99,10 +116,22 @@ const Projects = () => {
                     <Github className="h-4 w-4 mr-2" />
                     Code
                   </button>
-                  <button className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </button>
+                  {project.link ? (
+                    <a 
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700"
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      View Project
+                    </a>
+                  ) : (
+                    <button className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Live Demo
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
