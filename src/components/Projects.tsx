@@ -79,6 +79,14 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
+      title: "Apache Web Server in Docker",
+      description: "Containerized Apache web server deployment with Docker for scalable and portable web hosting solutions.",
+      stack: ["Apache Server", "Docker", "Web Hosting", "Containerization", "DevOps"],
+      gradient: "from-cyan-600 to-blue-600",
+      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_apacheserver-dockerdeployment-webhosting-activity-7348256254839926785-Oz0c?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
       title: "IBM Cloud Kubernetes Case Study",
       description: "Enterprise-level case study on IBM Cloud Kubernetes implementation with security analysis and best practices for cloud-native applications.",
       stack: ["IBM Cloud", "Kubernetes", "Case Study", "Cloud Security", "DevOps"],
