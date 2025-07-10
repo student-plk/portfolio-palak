@@ -56,6 +56,14 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
+      title: "Python WhatsApp Automation",
+      description: "Automated WhatsApp messaging system built with Python for efficient communication and task automation.",
+      stack: ["Python", "WhatsApp API", "Automation", "Selenium"],
+      gradient: "from-green-600 to-emerald-600",
+      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
       title: "DevOps Automation Pipeline",
       description: "Automated CI/CD pipeline implementation using modern DevOps tools and practices for seamless deployment.",
       stack: ["Docker", "Jenkins", "Kubernetes", "Git"],
