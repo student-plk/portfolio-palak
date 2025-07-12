@@ -73,10 +73,11 @@ const Projects = () => {
     },
     {
       title: "DevOps Automation Pipeline",
-      description: "Automated CI/CD pipeline implementation using modern DevOps tools and practices for seamless deployment.",
-      stack: ["Docker", "Jenkins", "Kubernetes", "Git"],
+      description: "Comprehensive CI/CD pipeline implementation with Docker containerization, automated testing, and deployment strategies for modern DevOps practices.",
+      stack: ["Docker", "CI/CD", "DevOps", "Automation", "Pipeline"],
       gradient: "from-emerald-600 to-teal-600",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_cicdpipeline-devops-docker-activity-7349672612215554048-h-jR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
     {
       title: "Apache Web Server in Docker",
