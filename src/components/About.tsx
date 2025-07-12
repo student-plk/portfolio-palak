@@ -63,7 +63,7 @@ const About = () => {
           {aboutData.map((item, index) => (
             <div
               key={index}
-              className={`scroll-reveal professional-card p-8 transition-all duration-300 border-2 about-border-${index}`}
+              className={`scroll-reveal professional-card p-8 transition-all duration-300 border border-[1.5px] rounded-xl ${index === 0 ? 'border-violet-500' : index === 1 ? 'border-blue-500' : index === 2 ? 'border-emerald-500' : 'border-orange-500'}`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${item.gradient} flex items-center justify-center mb-6`}>

@@ -81,7 +81,14 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className={`scroll-reveal professional-card p-6 transition-all duration-300 group border-2 skills-border-${index} hover:shadow-xl hover:scale-105`}
+              className={`scroll-reveal professional-card p-6 transition-all duration-300 group border border-[1.5px] rounded-xl hover:shadow-xl hover:scale-105 ${[
+                'border-blue-500',
+                'border-green-500',
+                'border-purple-500',
+                'border-orange-500',
+                'border-violet-500',
+                'border-teal-500',
+              ][index % 6]}`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${category.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>

@@ -151,7 +151,19 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border-2 projects-border-${index}`}
+              className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl ${[
+                'border-violet-500',
+                'border-blue-500',
+                'border-emerald-500',
+                'border-pink-500',
+                'border-green-500',
+                'border-teal-500',
+                'border-cyan-500',
+                'border-amber-500',
+                'border-indigo-500',
+                'border-orange-500',
+                'border-red-500',
+              ][index % 11]}`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative overflow-hidden">
