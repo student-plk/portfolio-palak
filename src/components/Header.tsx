@@ -27,7 +27,7 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-              {['About', 'Projects', 'Skills', 'Tools', 'Contact'].map((item) => (
+              {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -52,7 +52,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-gray-800 border-t border-gray-700">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {['About', 'Projects', 'Skills', 'Tools', 'Contact'].map((item) => (
+              {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
