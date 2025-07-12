@@ -54,7 +54,7 @@ function App() {
           <About />
           <Projects />
           <Skills />
-          <Tools />
+          
           <Contact />
         </main>
         <BackToTop />
