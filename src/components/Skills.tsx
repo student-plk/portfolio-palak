@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Server, Brain, Layers, Zap } from 'lucide-react';
+import { Code, Globe, Database, Wrench, Zap, BookOpen } from 'lucide-react';
 
 const Skills = () => {
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -22,36 +22,48 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
-  const skills = [
+  const skillCategories = [
     {
-      name: "Linux",
-      icon: Server,
-      level: 85,
-      color: "from-orange-500 to-red-500"
+      title: "Programming Languages",
+      icon: Code,
+      gradient: "from-blue-600 to-cyan-600",
+      skills: ["Python", "JavaScript"],
+      description: "Core programming languages for development and automation"
     },
     {
-      name: "Machine Learning",
-      icon: Brain,
-      level: 90,
-      color: "from-purple-500 to-pink-500"
+      title: "Web Development",
+      icon: Globe,
+      gradient: "from-green-600 to-emerald-600",
+      skills: ["HTML", "Flask", "CSS"],
+      description: "Frontend and backend web development technologies"
     },
     {
-      name: "DevOps",
-      icon: Layers,
-      level: 80,
-      color: "from-blue-500 to-cyan-500"
+      title: "Database",
+      icon: Database,
+      gradient: "from-purple-600 to-pink-600",
+      skills: ["MySQL", "MongoDB"],
+      description: "Relational and NoSQL database management systems"
     },
     {
-      name: "Full Stack",
+      title: "Tools & Development",
+      icon: Wrench,
+      gradient: "from-orange-600 to-red-600",
+      skills: ["Git", "GitHub", "Docker", "Kubernetes", "Jenkins"],
+      description: "Version control, containerization, and CI/CD tools"
+    },
+    {
+      title: "API & Integration",
       icon: Zap,
-      level: 85,
-      color: "from-green-500 to-emerald-500"
+      gradient: "from-violet-600 to-indigo-600",
+      skills: ["OpenAI", "GitHub REST API"],
+      description: "Third-party APIs and integration services"
     },
     {
-      name: "Agentic AI",
-      icon: Brain,
-      level: 75,
-      color: "from-violet-500 to-purple-500"
+      title: "Currently Learning",
+      icon: BookOpen,
+      gradient: "from-teal-600 to-blue-600",
+      skills: ["Machine Learning", "GenAI", "GenAI Ops"],
+      description: "Emerging technologies and ongoing skill development"
     }
   ];
 
@@ -65,22 +77,35 @@ const Skills = () => {
           <div className="professional-divider mx-auto max-w-xs"></div>
         </div>
 
-        <div className="symmetric-grid-5">
-          {skills.map((skill, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {skillCategories.map((category, index) => (
             <div
               key={index}
-              className={`scroll-reveal professional-card p-8 text-center transition-all duration-300 group border-2 skills-border-${index}`}
+              className={`scroll-reveal professional-card p-6 transition-all duration-300 group border-2 skills-border-${index} hover:shadow-xl hover:scale-105`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className={`w-20 h-20 rounded-2xl bg-gradient-to-r ${skill.color} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <skill.icon className="h-10 w-10 text-white" />
+              <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${category.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <category.icon className="h-8 w-8 text-white" />
               </div>
               
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                {skill.name}
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                {category.title}
               </h3>
               
-              {/* Removed the skill bar and progress line */}
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                {category.description}
+              </p>
+              
+              <div className="space-y-2">
+                {category.skills.map((skill, skillIndex) => (
+                  <div key={skillIndex} className="flex items-center">
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${category.gradient} mr-3`}></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">
+                      {skill}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
