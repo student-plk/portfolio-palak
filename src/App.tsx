@@ -12,12 +12,18 @@ import './App.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const savedMode = localStorage.getItem('darkMode');
     if (savedMode !== null) {
       setDarkMode(JSON.parse(savedMode));
     }
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -32,6 +38,16 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+  if (loading) {
+    return (
+      <div className={`fixed inset-0 flex items-center justify-center z-50 bg-gray-900 dark:bg-gray-900 transition-colors duration-300`}>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white animate-pulse tracking-wide text-center">
+          This Is Palak's Portfolio
+        </h1>
+      </div>
+    );
+  }
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${
