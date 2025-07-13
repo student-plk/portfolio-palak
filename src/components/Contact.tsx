@@ -70,7 +70,7 @@ const Contact = () => {
 
         <div className="symmetric-grid-2 items-stretch">
           {/* Contact Information */}
-          <div className="scroll-reveal space-y-8 border-2 contact-border-0">
+          <div className="scroll-reveal space-y-8 border border-[1.5px] rounded-xl border-violet-500">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Let's Connect
@@ -115,7 +115,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="scroll-reveal border-2 contact-border-1">
+          <div className="scroll-reveal border border-[1.5px] rounded-xl border-blue-500">
             <form onSubmit={handleSubmit} className="professional-card p-8 space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">

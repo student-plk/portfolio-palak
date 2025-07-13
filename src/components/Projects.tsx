@@ -33,6 +33,14 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
+      title: "AI-Powered News Generator",
+      description: "Intelligent news generation system using Agentic AI and Gemini AI with Streamlit interface for automated content creation and curation.",
+      stack: ["Agentic AI", "Gemini AI", "Streamlit", "Python", "News Generation"],
+      gradient: "from-purple-600 to-pink-600",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_agenticai-geminiai-streamlit-activity-7350200982393319424-sVU9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
       title: "JavaScript Web Integration",
       description: "Advanced web development project featuring geolocation services and modern JavaScript integration techniques.",
       stack: ["JavaScript", "Web Development", "Geolocation", "HTML/CSS"],
