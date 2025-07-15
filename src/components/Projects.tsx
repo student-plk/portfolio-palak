@@ -75,14 +75,6 @@ const Projects = () => {
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-streamlit-webappdevelopment-activity-7342855025926230016-qENi?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
     {
-      title: "Python WhatsApp Automation",
-      description: "Real-time messaging automation using PyWhatKit library for both individual contacts and group messaging with time-based execution.",
-      stack: ["Python", "PyWhatKit", "WhatsApp Bot", "Automation", "Real-time"],
-      gradient: "from-green-600 to-emerald-600",
-      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-whatsappbot-activity-7343508397134073856-hYj_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-    },
-    {
       title: "Multi-Platform Python Automation Suite",
       description: "Comprehensive automation portfolio including SMS alerts, automated phone calls, Instagram posting bot, and email automation using Python APIs.",
       stack: ["Python", "Twilio", "SMS", "Instagram Bot", "Email Automation"],

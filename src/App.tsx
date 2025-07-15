@@ -49,6 +49,15 @@ function App() {
       image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
       codeLink: "https://github.com/student-plk/javascript_task"
+    },
+    {
+      title: "Python WhatsApp Automation",
+      description: "Real-time messaging automation using PyWhatKit library for both individual contacts and group messaging with time-based execution.",
+      stack: ["Python", "PyWhatKit", "WhatsApp Bot", "Automation", "Real-time"],
+      gradient: "from-green-600 to-emerald-600",
+      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-whatsappbot-activity-7343508397134073856-hYj_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
+      codeLink: null
     }
   ];
 
