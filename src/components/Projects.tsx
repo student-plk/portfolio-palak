@@ -11,6 +11,16 @@ interface Project {
   codeLink?: string;
 }
 
+interface CaseStudy {
+  title: string;
+  description: string;
+  stack: string[];
+  gradient: string;
+  image: string;
+  link?: string;
+  codeLink?: string;
+}
+
 const Projects = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
 
@@ -140,6 +150,20 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_internshipjourney-project3-ai-activity-7345183466516271105-9l4s?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
       codeLink: "https://github.com/student-plk/Python_project"
+    }
+  ];
+
+  // Add your case studies here
+  const caseStudies: CaseStudy[] = [
+    // Example case study (replace or add more as needed)
+    {
+      title: "Sample Case Study Title",
+      description: "Description of the case study goes here. You can add more case studies to this array.",
+      stack: ["Tech 1", "Tech 2", "Tech 3"],
+      gradient: "from-blue-600 to-indigo-600",
+      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "#",
+      codeLink: "#"
     },
     {
       title: "Amazon CloudSearch Case Study",
@@ -259,9 +283,97 @@ const Projects = () => {
             </h2>
             <div className="professional-divider mx-auto max-w-xs"></div>
           </div>
-          <div className="text-center text-gray-600 dark:text-gray-300 text-lg">
-            {/* Placeholder for future case study content */}
-            <p>Case studies will be added here soon. Stay tuned!</p>
+          {/* Case Study Cards */}
+          <div className="symmetric-grid-3">
+            {caseStudies.length === 0 ? (
+              <div className="text-center text-gray-600 dark:text-gray-300 text-lg w-full col-span-3">
+                <p>Case studies will be added here soon. Stay tuned!</p>
+              </div>
+            ) : (
+              caseStudies.map((study, index) => (
+                <div
+                  key={index}
+                  className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl ${[
+                    'border-violet-500',
+                    'border-blue-500',
+                    'border-emerald-500',
+                    'border-pink-500',
+                    'border-green-500',
+                    'border-teal-500',
+                    'border-cyan-500',
+                    'border-amber-500',
+                    'border-indigo-500',
+                    'border-orange-500',
+                    'border-red-500',
+                  ][index % 11]}`}
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={study.image}
+                      alt={study.title}
+                      className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-r ${study.gradient} opacity-80`}></div>
+                    <div className="absolute top-4 right-4">
+                      <Code className="h-6 w-6 text-white" />
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                      {study.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                      {study.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {study.stack.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex space-x-4">
+                      {study.codeLink ? (
+                        <a
+                          href={study.codeLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                        >
+                          <Github className="h-4 w-4 mr-2" />
+                          Code
+                        </a>
+                      ) : (
+                        <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                          <Github className="h-4 w-4 mr-2" />
+                          Code
+                        </button>
+                      )}
+                      {study.link ? (
+                        <a
+                          href={study.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          View Case Study
+                        </a>
+                      ) : (
+                        <button className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700">
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Live Demo
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </section>
