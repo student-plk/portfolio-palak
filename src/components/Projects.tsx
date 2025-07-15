@@ -87,7 +87,8 @@ const Projects = () => {
       stack: ["Python", "Twilio", "SMS", "Instagram Bot", "Email Automation"],
       gradient: "from-teal-600 to-green-600",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
+      codeLink: "https://github.com/student-plk/python_task"
     },
     {
       title: "DevOps Automation Pipeline",
