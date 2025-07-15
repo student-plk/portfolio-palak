@@ -62,7 +62,7 @@ const Skills = () => {
       title: "Currently Learning",
       icon: BookOpen,
       gradient: "from-teal-600 to-blue-600",
-      skills: ["Machine Learning", "GenAI", "GenAI Ops"],
+      skills: ["Machine Learning", "GenAI", "GenAI Ops", "Agentic AI"],
       description: "Emerging technologies and ongoing skill development"
     }
   ];
