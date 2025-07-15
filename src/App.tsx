@@ -68,6 +68,21 @@ function App() {
         <main className="relative z-10">
           <Hero />
           <About />
+          {/* Task Section */}
+          <section id="task" className="py-20 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
+                  Task
+                </h2>
+                <div className="professional-divider mx-auto max-w-xs"></div>
+              </div>
+              <div className="text-center text-gray-600 dark:text-gray-300 text-lg">
+                {/* Placeholder for future task content */}
+                <p>Task details will be added here soon. Stay tuned!</p>
+              </div>
+            </div>
+          </section>
           <Projects />
           <Skills />
           

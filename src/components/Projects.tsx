@@ -273,6 +273,21 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      {/* Major Project Section */}
+      <section id="major-project" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
+              Major Project
+            </h2>
+            <div className="professional-divider mx-auto max-w-xs"></div>
+          </div>
+          <div className="text-center text-gray-600 dark:text-gray-300 text-lg">
+            {/* Placeholder for future major project content */}
+            <p>Major project details will be added here soon. Stay tuned!</p>
+          </div>
+        </div>
+      </section>
       {/* Case Study Section */}
       <section id="case-study" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -373,21 +388,6 @@ const Projects = () => {
                 </div>
               ))
             )}
-          </div>
-        </div>
-      </section>
-      {/* Major Project Section */}
-      <section id="major-project" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
-              Major Project
-            </h2>
-            <div className="professional-divider mx-auto max-w-xs"></div>
-          </div>
-          <div className="text-center text-gray-600 dark:text-gray-300 text-lg">
-            {/* Placeholder for future major project content */}
-            <p>Major project details will be added here soon. Stay tuned!</p>
           </div>
         </div>
       </section>
