@@ -118,14 +118,6 @@ const Projects = () => {
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_apacheserver-dockerdeployment-webhosting-activity-7348256254839926785-Oz0c?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
     {
-      title: "IBM Cloud Kubernetes Case Study",
-      description: "Enterprise-level case study on IBM Cloud Kubernetes implementation with security analysis and best practices for cloud-native applications.",
-      stack: ["IBM Cloud", "Kubernetes", "Case Study", "Cloud Security", "DevOps"],
-      gradient: "from-blue-600 to-indigo-600",
-      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_casestudy-kubernetes-ibmcloud-activity-7347498955703775232--TaY?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-    },
-    {
       title: "Python Menu-Based RHEL Project",
       description: "Interactive menu-driven system for RHEL administration with root access capabilities and system management features.",
       stack: ["Python", "RHEL", "Linux Admin", "Root Access", "System Management"],
@@ -338,7 +330,7 @@ const Projects = () => {
                     <img
                       src={study.image}
                       alt={study.title}
-                      className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                      className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500" // Match project card image
                     />
                     <div className={`absolute inset-0 bg-gradient-to-r ${study.gradient} opacity-80`}></div>
                     <div className="absolute top-4 right-4">
