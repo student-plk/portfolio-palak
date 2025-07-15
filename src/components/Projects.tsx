@@ -156,15 +156,6 @@ const Projects = () => {
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_casestudy-kubernetes-ibmcloud-activity-7347498955703775232--TaY?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
     {
-      title: "Python Menu-Based RHEL Project",
-      description: "Interactive menu-driven system for RHEL administration with root access capabilities and system management features.",
-      stack: ["Python", "RHEL", "Linux Admin", "Root Access", "System Management"],
-      gradient: "from-yellow-600 to-orange-600",
-      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_pythonlearning-rhel-rootaccess-activity-7342642753207427073-sIgG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
-      codeLink: "https://github.com/student-plk/Python_project"
-    },
-    {
       title: "AI-Powered Disease Assistant WebApp",
       description: "Intelligent disease prediction system using machine learning models with 95% accuracy for early disease detection and healthcare assistance.",
       stack: ["Machine Learning", "Python", "WebApp", "Healthcare AI", "95% Accuracy"],
@@ -382,6 +373,21 @@ const Projects = () => {
                 </div>
               ))
             )}
+          </div>
+        </div>
+      </section>
+      {/* Major Project Section */}
+      <section id="major-project" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
+              Major Project
+            </h2>
+            <div className="professional-divider mx-auto max-w-xs"></div>
+          </div>
+          <div className="text-center text-gray-600 dark:text-gray-300 text-lg">
+            {/* Placeholder for future major project content */}
+            <p>Major project details will be added here soon. Stay tuned!</p>
           </div>
         </div>
       </section>
