@@ -139,16 +139,6 @@ const Projects = () => {
 
   // Add your case studies here
   const caseStudies: CaseStudy[] = [
-    // Example case study (replace or add more as needed)
-    {
-      title: "Sample Case Study Title",
-      description: "Description of the case study goes here. You can add more case studies to this array.",
-      stack: ["Tech 1", "Tech 2", "Tech 3"],
-      gradient: "from-blue-600 to-indigo-600",
-      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "#",
-      codeLink: "#"
-    },
     {
       title: "Amazon CloudSearch Case Study",
       description: "Comprehensive case study on how Amazon CloudSearch transformed an e-commerce platform's search capabilities with 10x performance improvement.",
