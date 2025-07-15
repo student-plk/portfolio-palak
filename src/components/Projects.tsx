@@ -118,14 +118,6 @@ const Projects = () => {
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_apacheserver-dockerdeployment-webhosting-activity-7348256254839926785-Oz0c?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
     {
-      title: "McDonald's Digital Transformation Case Study",
-      description: "Comprehensive analysis of McDonald's digital transformation journey using AWS cloud services and modern technology solutions.",
-      stack: ["AWS", "Digital Transformation", "Case Study", "Cloud Architecture", "Enterprise"],
-      gradient: "from-amber-600 to-orange-600",
-      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_case-study-mcdonalds-digital-transformation-activity-7349123414147612674-s7DG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-    },
-    {
       title: "IBM Cloud Kubernetes Case Study",
       description: "Enterprise-level case study on IBM Cloud Kubernetes implementation with security analysis and best practices for cloud-native applications.",
       stack: ["IBM Cloud", "Kubernetes", "Case Study", "Cloud Security", "DevOps"],
@@ -172,6 +164,40 @@ const Projects = () => {
       gradient: "from-purple-600 to-pink-600",
       image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_amazoncloudsearch-awssearch-cloudcomputing-activity-7349293884021051393-OitI?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
+      title: "McDonald's Digital Transformation Case Study",
+      description: "Comprehensive analysis of McDonald's digital transformation journey using AWS cloud services and modern technology solutions.",
+      stack: ["AWS", "Digital Transformation", "Case Study", "Cloud Architecture", "Enterprise"],
+      gradient: "from-amber-600 to-orange-600",
+      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_case-study-mcdonalds-digital-transformation-activity-7349123414147612674-s7DG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
+      title: "IBM Cloud Kubernetes Case Study",
+      description: "Enterprise-level case study on IBM Cloud Kubernetes implementation with security analysis and best practices for cloud-native applications.",
+      stack: ["IBM Cloud", "Kubernetes", "Case Study", "Cloud Security", "DevOps"],
+      gradient: "from-blue-600 to-indigo-600",
+      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_casestudy-kubernetes-ibmcloud-activity-7347498955703775232--TaY?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
+      title: "Python Menu-Based RHEL Project",
+      description: "Interactive menu-driven system for RHEL administration with root access capabilities and system management features.",
+      stack: ["Python", "RHEL", "Linux Admin", "Root Access", "System Management"],
+      gradient: "from-yellow-600 to-orange-600",
+      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_pythonlearning-rhel-rootaccess-activity-7342642753207427073-sIgG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
+      codeLink: "https://github.com/student-plk/Python_project"
+    },
+    {
+      title: "AI-Powered Disease Assistant WebApp",
+      description: "Intelligent disease prediction system using machine learning models with 95% accuracy for early disease detection and healthcare assistance.",
+      stack: ["Machine Learning", "Python", "WebApp", "Healthcare AI", "95% Accuracy"],
+      gradient: "from-orange-600 to-red-600",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_internshipjourney-project3-ai-activity-7345183466516271105-9l4s?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
+      codeLink: "https://github.com/student-plk/Python_project"
     }
   ];
 
