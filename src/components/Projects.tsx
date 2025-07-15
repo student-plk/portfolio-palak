@@ -8,6 +8,7 @@ interface Project {
   gradient: string;
   image: string;
   link?: string;
+  codeLink?: string;
 }
 
 const Projects = () => {
@@ -46,7 +47,8 @@ const Projects = () => {
       stack: ["JavaScript", "Web Development", "Geolocation", "HTML/CSS"],
       gradient: "from-violet-600 to-purple-600",
       image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
+      codeLink: "https://github.com/student-plk/javascript_task"
     },
     {
       title: "Agentic AI with Twilio & LangChain",
@@ -206,10 +208,22 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-4">
-                  <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600">
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
-                  </button>
+                  {project.codeLink ? (
+                    <a
+                      href={project.codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                    >
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </a>
+                  ) : (
+                    <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </button>
+                  )}
                   {project.link ? (
                     <a 
                       href={project.link}
