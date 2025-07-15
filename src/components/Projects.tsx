@@ -52,15 +52,6 @@ const Projects = () => {
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_agenticai-geminiai-streamlit-activity-7350200982393319424-sVU9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
     {
-      title: "JavaScript Web Integration",
-      description: "Advanced web development project featuring geolocation services and modern JavaScript integration techniques.",
-      stack: ["JavaScript", "Web Development", "Geolocation", "HTML/CSS"],
-      gradient: "from-violet-600 to-purple-600",
-      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
-      codeLink: "https://github.com/student-plk/javascript_task"
-    },
-    {
       title: "Agentic AI with Twilio & LangChain",
       description: "Voice automation system using Twilio and LangChain for intelligent conversational AI with real-time voice processing capabilities.",
       stack: ["Twilio", "LangChain", "Python", "Voice AI", "Automation"],
