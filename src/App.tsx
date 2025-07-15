@@ -105,7 +105,7 @@ function App() {
                       />
                       <div className={`absolute inset-0 bg-gradient-to-r ${task.gradient} opacity-80`}></div>
                       <div className="absolute top-4 right-4">
-                        <Code className="h-6 w-6 text-white" />
+                        <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8z" /></svg>
                       </div>
                     </div>
                     <div className="p-6">
@@ -126,38 +126,22 @@ function App() {
                         ))}
                       </div>
                       <div className="flex space-x-4">
-                        {task.codeLink ? (
-                          <a
-                            href={task.codeLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                          >
-                            <Github className="h-4 w-4 mr-2" />
-                            Code
-                          </a>
-                        ) : (
-                          <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                            <Github className="h-4 w-4 mr-2" />
-                            Code
-                          </button>
-                        )}
-                        {task.link ? (
-                          <a
-                            href={task.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700"
-                          >
-                            <ExternalLink className="h-4 w-4 mr-2" />
-                            View Project
-                          </a>
-                        ) : (
-                          <button className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700">
-                            <ExternalLink className="h-4 w-4 mr-2" />
-                            Live Demo
-                          </button>
-                        )}
+                        <a
+                          href={task.codeLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                        >
+                          Code
+                        </a>
+                        <a
+                          href={task.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700"
+                        >
+                          View Project
+                        </a>
                       </div>
                     </div>
                   </div>
