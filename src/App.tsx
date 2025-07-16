@@ -161,6 +161,73 @@ function App() {
           <Skills />
           
           <Contact />
+          {/* Task2 Section */}
+          <section id="task2" className="py-20 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
+                  Task2
+                </h2>
+                <div className="professional-divider mx-auto max-w-xs"></div>
+              </div>
+              <div className="flex flex-wrap justify-center gap-8">
+                {tasks.map((task, idx) => (
+                  <div
+                    key={idx}
+                    className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-emerald-500`}
+                    style={{ width: '350px' }}
+                  >
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={task.image}
+                        alt={task.title}
+                        className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-r ${task.gradient} opacity-80`}></div>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                        {task.title}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                        {task.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {task.stack.map((tech, i) => (
+                          <span
+                            key={i}
+                            className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-full text-xs font-medium"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex space-x-4">
+                        {task.codeLink && (
+                          <a
+                            href={task.codeLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                          >
+                            Code
+                          </a>
+                        )}
+                        <a
+                          href={task.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="professional-btn flex items-center bg-emerald-600 text-white hover:bg-emerald-700"
+                        >
+                          View Project
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
         </main>
         <BackToTop />
       </div>
