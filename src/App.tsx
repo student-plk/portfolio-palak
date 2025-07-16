@@ -69,6 +69,49 @@ function App() {
           <Hero />
           <About />
           <Projects />
+          {/* AWS 86 Services Case Study Card */}
+          <section id="aws-case-study" className="py-8 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="flex flex-wrap justify-center gap-8">
+                <div
+                  className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-yellow-500"
+                  style={{ width: '350px' }}
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png"
+                      alt="86 AWS Services Case Study"
+                      className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 opacity-80"></div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                      86 AWS Services: Deep Understanding Case Study
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                      An in-depth learning journey through 86 core AWS services, covering compute, storage, networking, machine learning, DevOps, and security. Focused on real-world applications and foundational knowledge for hands-on implementation.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-xs font-medium">AWS</span>
+                      <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-xs font-medium">Cloud Computing</span>
+                      <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-xs font-medium">Case Study</span>
+                    </div>
+                    <div className="flex space-x-4">
+                      <a
+                        href="https://www.linkedin.com/posts/palak-saini-7868b921b_aws-services-activity-7350633946767835137-Iseg?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="professional-btn flex items-center bg-yellow-500 text-white hover:bg-yellow-600"
+                      >
+                        View Project
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <Skills />
           
           <Contact />
