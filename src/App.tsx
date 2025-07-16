@@ -99,18 +99,6 @@ function App() {
                 </h2>
                 <div className="professional-divider mx-auto max-w-xs"></div>
               </div>
-              {/* No projects/cards here anymore */}
-            </div>
-          </section>
-          {/* Projects Section with tasks */}
-          <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
-                  Projects
-                </h2>
-                <div className="professional-divider mx-auto max-w-xs"></div>
-              </div>
               <div className="flex flex-wrap justify-center gap-8">
                 {tasks.map((task, idx) => (
                   <div
