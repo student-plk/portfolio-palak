@@ -123,6 +123,14 @@ const Projects = () => {
   // Add your case studies here
   const caseStudies: CaseStudy[] = [
     {
+      title: "86 AWS Services Deep Understanding Case Study",
+      description: "Comprehensive study of 84 core AWS services covering compute, storage, networking, machine learning, DevOps, and security. Deep theoretical knowledge foundation for practical cloud implementation.",
+      stack: ["AWS", "Cloud Computing", "84 Services", "EC2", "Lambda", "S3", "IAM", "VPC", "DynamoDB"],
+      gradient: "from-orange-600 to-red-600",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_aws-services-activity-7350633946767835137-Iseg?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+    },
+    {
       title: "McDonald's Digital Transformation Case Study",
       description: "Comprehensive analysis of McDonald's digital transformation journey using AWS cloud services and modern technology solutions.",
       stack: ["AWS", "Digital Transformation", "Case Study", "Cloud Architecture", "Enterprise"],
@@ -307,6 +315,111 @@ const Projects = () => {
                   >
                     <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-6M15 10l-3-3-3 3m3-3v12" /></svg>
                     View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Task Section */}
+      <section id="task" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
+              Task
+            </h2>
+            <div className="professional-divider mx-auto max-w-xs"></div>
+          </div>
+          <div className="flex flex-wrap justify-center gap-8">
+            <div
+              className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-purple-500"
+              style={{ width: '400px' }}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Python Pillow Digital Art"
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-80"></div>
+                <div className="absolute top-4 right-4">
+                  <Code className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  Python Pillow Library Digital Art Task
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                  Creative digital art project using Python's Pillow library for image processing and manipulation, showcasing programming skills in digital creativity and image editing.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Python</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Pillow Library</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Digital Art</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Image Processing</span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Creative Coding</span>
+                </div>
+                <div className="flex space-x-4">
+                  <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                    <Github className="h-4 w-4 mr-2" />
+                    Code
+                  </button>
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonprogramming-pillowlibrary-digitalart-activity-7351296305190596610-2xac?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="professional-btn flex items-center bg-purple-600 text-white hover:bg-purple-700"
+                  >
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    View Task
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-green-500"
+              style={{ width: '400px' }}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Python System Monitoring"
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-teal-600 opacity-80"></div>
+                <div className="absolute top-4 right-4">
+                  <Code className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  Python System Monitoring Task
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                  Advanced system monitoring script using Python for real-time system performance tracking, resource utilization monitoring, and automated system health checks.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Python</span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">System Monitoring</span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Performance Tracking</span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Resource Utilization</span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Automation</span>
+                </div>
+                <div className="flex space-x-4">
+                  <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                    <Github className="h-4 w-4 mr-2" />
+                    Code
+                  </button>
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonproject-systemmonitoring-pythonscript-activity-7350849143411507201-m1bj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="professional-btn flex items-center bg-green-600 text-white hover:bg-green-700"
+                  >
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    View Task
                   </a>
                 </div>
               </div>
