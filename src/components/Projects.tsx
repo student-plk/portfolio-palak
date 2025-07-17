@@ -44,6 +44,15 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
+      title: "JavaScript Web Integration Project",
+      description: "Advanced web development project featuring 8 key integrations: WhatsApp messaging, live geolocation, nearby store finder, navigation routing, webcam photo capture, video recording, email automation, and photo-to-email functionality.",
+      stack: ["JavaScript", "Web APIs", "Geolocation", "MediaDevices", "EmailJS"],
+      gradient: "from-blue-600 to-cyan-600",
+      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
+      codeLink: "https://github.com/student-plk/javascript_task"
+    },
+    {
       title: "AI-Powered News Generator",
       description: "Intelligent news generation system using Agentic AI and Gemini AI with Streamlit interface for automated content creation and curation.",
       stack: ["Agentic AI", "Gemini AI", "Streamlit", "Python", "News Generation"],
