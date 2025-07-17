@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Moon, Sun, Github, ExternalLink, Code } from 'lucide-react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Tools from './components/Tools';
 import Contact from './components/Contact';
 import BackToTop from './components/BackToTop';
 import './App.css';
@@ -35,10 +33,6 @@ function App() {
     }
   }, [darkMode]);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   if (loading) {
     return (
       <div className={`fixed inset-0 flex items-center justify-center z-50 bg-gray-900 dark:bg-gray-900 transition-colors duration-300`}>
@@ -61,16 +55,13 @@ function App() {
           <div className="floating-blob blob-3"></div>
         </div>
 
-        {/* Theme toggle button */}
-        {/* Removed theme toggle button as per user request */}
-
         <Header />
         <main className="relative z-10">
           <Hero />
           <About />
           <Projects />
           {/* AWS 86 Services Case Study Card */}
-          <section id="aws-case-study" className="py-8 px-4 sm:px-6 lg:px-8">
+          <div className="py-4 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-wrap justify-center gap-8">
                 <div
@@ -111,7 +102,7 @@ function App() {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
           <Skills />
           
           <Contact />
