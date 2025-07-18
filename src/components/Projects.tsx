@@ -222,15 +222,15 @@ const Projects = () => {
                       href={project.codeLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                      className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
                     >
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
+                      <Github className="h-4 w-4" />
+                      GitHub Code
                     </a>
                   ) : (
-                    <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
+                    <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                      <Github className="h-4 w-4" />
+                      GitHub Code
                     </button>
                   )}
                   {project.link ? (
@@ -302,10 +302,10 @@ const Projects = () => {
                     href="https://github.com/student-plk/Devops_project1"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                    className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
                   >
                     <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z" /></svg>
-                    Code
+                    GitHub Code
                   </a>
                   <a
                     href="https://www.linkedin.com/posts/palak-saini-7868b921b_cicdpipeline-devops-docker-activity-7349672612215554048-h-jR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
@@ -362,9 +362,9 @@ const Projects = () => {
                   <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Creative Coding</span>
                 </div>
                 <div className="flex space-x-4">
-                  <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
+                  <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                    <Github className="h-4 w-4" />
+                    GitHub Code
                   </button>
                   <a
                     href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonprogramming-pillowlibrary-digitalart-activity-7351296305190596610-2xac?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
@@ -408,9 +408,9 @@ const Projects = () => {
                   <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Automation</span>
                 </div>
                 <div className="flex space-x-4">
-                  <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
+                  <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                    <Github className="h-4 w-4" />
+                    GitHub Code
                   </button>
                   <a
                     href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonproject-systemmonitoring-pythonscript-activity-7350849143411507201-m1bj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
@@ -495,14 +495,14 @@ const Projects = () => {
                           href={study.codeLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                          className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
                         >
-                          <Github className="h-4 w-4 mr-2" />
+                          <Github className="h-4 w-4" />
                           Code
                         </a>
                       ) : (
-                        <button className="professional-btn flex items-center bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                          <Github className="h-4 w-4 mr-2" />
+                        <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                          <Github className="h-4 w-4" />
                           Code
                         </button>
                       )}
