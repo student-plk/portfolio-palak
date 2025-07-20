@@ -69,28 +69,12 @@ const Projects = () => {
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_twilio-langchain-voiceautomation-activity-7347595930780495872--pjA?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
     {
-      title: "Full Stack Web Application",
-      description: "A comprehensive web application built with modern technologies including React, Node.js, and database integration.",
-      stack: ["React", "Node.js", "MongoDB", "Express"],
-      gradient: "from-blue-600 to-cyan-600",
-      image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
       title: "EVENT PASS - Music Festival Booking",
       description: "Interactive music festival ticket booking webapp with real-time availability, pricing, and seamless booking experience.",
       stack: ["Streamlit", "Python", "WebApp", "Event Booking", "UI/UX"],
       gradient: "from-pink-600 to-rose-600",
       image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-streamlit-webappdevelopment-activity-7342855025926230016-qENi?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-    },
-    {
-      title: "Multi-Platform Python Automation Suite",
-      description: "Comprehensive automation portfolio including SMS alerts, automated phone calls, Instagram posting bot, and email automation using Python APIs.",
-      stack: ["Python", "Twilio", "SMS", "Instagram Bot", "Email Automation"],
-      gradient: "from-teal-600 to-green-600",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
-      codeLink: "https://github.com/student-plk/python_task"
     },
     {
       title: "Apache Web Server in Docker",
@@ -225,12 +209,12 @@ const Projects = () => {
                       className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
                     >
                       <Github className="h-4 w-4" />
-                      GitHub Code
+                      View on GitHub
                     </a>
                   ) : (
                     <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
                       <Github className="h-4 w-4" />
-                      GitHub Code
+                      View on GitHub
                     </button>
                   )}
                   {project.link ? (
@@ -304,8 +288,8 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
                   >
-                    <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z" /></svg>
-                    GitHub Code
+                    <Github className="h-4 w-4" />
+                    View on GitHub
                   </a>
                   <a
                     href="https://www.linkedin.com/posts/palak-saini-7868b921b_cicdpipeline-devops-docker-activity-7349672612215554048-h-jR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
@@ -327,7 +311,7 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
-              Task
+              Python Task
             </h2>
             <div className="professional-divider mx-auto max-w-xs"></div>
           </div>
@@ -364,7 +348,7 @@ const Projects = () => {
                 <div className="flex space-x-4">
                   <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
                     <Github className="h-4 w-4" />
-                    GitHub Code
+                    View on GitHub
                   </button>
                   <a
                     href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonprogramming-pillowlibrary-digitalart-activity-7351296305190596610-2xac?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
@@ -410,7 +394,7 @@ const Projects = () => {
                 <div className="flex space-x-4">
                   <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
                     <Github className="h-4 w-4" />
-                    GitHub Code
+                    View on GitHub
                   </button>
                   <a
                     href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonproject-systemmonitoring-pythonscript-activity-7350849143411507201-m1bj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
@@ -423,6 +407,141 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
+            </div>
+            <div
+              className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-green-500"
+              style={{ width: '400px' }}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Multi-Platform Python Automation Suite"
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-green-600 opacity-80"></div>
+                <div className="absolute top-4 right-4">
+                  <Code className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  Multi-Platform Python Automation Suite
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                  Comprehensive automation portfolio including SMS alerts, automated phone calls, Instagram posting bot, and email automation using Python APIs.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Python</span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Twilio</span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">SMS</span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Instagram Bot</span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Email Automation</span>
+                </div>
+                <div className="flex space-x-4">
+                  <a
+                    href="https://github.com/student-plk/python_task"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                  >
+                    <Github className="h-4 w-4" />
+                    View on GitHub
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="professional-btn flex items-center bg-green-600 text-white hover:bg-green-700"
+                  >
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* JavaScript Automation Section */}
+      <section id="javascript-automation" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
+              JavaScript Automation
+            </h2>
+            <div className="professional-divider mx-auto max-w-xs"></div>
+          </div>
+          <div className="space-y-8">
+            {/* Card 1: Send WhatsApp Message Using JavaScript */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  <span className="text-gray-400 text-xs flex items-center">
+                    <svg className="h-4 w-4 mr-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/></svg>
+                    2024-07-07
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">Send WhatsApp Message Using JavaScript</h3>
+                <p className="text-gray-300 text-base">Use WhatsApp web URL scheme or API to initiate a WhatsApp message from JavaScript.</p>
+              </div>
+              <a
+                href="https://github.com/student-plk/javascript_task"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#1a2233] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#2d3748] transition"
+              >
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+
+            {/* Card 2: Show My Live Location */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  <span className="text-gray-400 text-xs flex items-center">
+                    <svg className="h-4 w-4 mr-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/></svg>
+                    2024-07-07
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">Show My Live Location</h3>
+                <p className="text-gray-300 text-base">Use JavaScript geolocation API to get and display the user's current location.</p>
+              </div>
+              <a
+                href="https://github.com/student-plk/javascript_task"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#1a2233] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#2d3748] transition"
+              >
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+
+            {/* Card 3: Find Nearby Grocery Stores */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  <span className="text-gray-400 text-xs flex items-center">
+                    <svg className="h-4 w-4 mr-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/></svg>
+                    2024-07-07
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">Find Nearby Grocery Stores</h3>
+                <p className="text-gray-300 text-base">Use JavaScript and location services to find and display nearby grocery stores.</p>
+              </div>
+              <a
+                href="https://github.com/student-plk/javascript_task"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#1a2233] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#2d3748] transition"
+              >
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                View on GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -498,12 +617,12 @@ const Projects = () => {
                           className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
                         >
                           <Github className="h-4 w-4" />
-                          Code
+                          View on GitHub
                         </a>
                       ) : (
                         <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
                           <Github className="h-4 w-4" />
-                          Code
+                          View on GitHub
                         </button>
                       )}
                       {study.link ? (
