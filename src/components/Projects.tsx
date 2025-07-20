@@ -44,17 +44,8 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
-      title: "JavaScript Web Integration Project",
-      description: "Advanced web development project featuring 8 key integrations: WhatsApp messaging, live geolocation, nearby store finder, navigation routing, webcam photo capture, video recording, email automation, and photo-to-email functionality.",
-      stack: ["JavaScript", "Web APIs", "Geolocation", "MediaDevices", "EmailJS"],
-      gradient: "from-blue-600 to-cyan-600",
-      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
-      codeLink: "https://github.com/student-plk/javascript_task"
-    },
-    {
-      title: "AI-Powered News Generator",
-      description: "Intelligent news generation system using Agentic AI and Gemini AI with Streamlit interface for automated content creation and curation.",
+      title: "Web Scrapping Project",
+      description: "AI-Powered News Generator. Intelligent news generation system using Agentic AI and Gemini AI with Streamlit interface for automated content creation and curation.",
       stack: ["Agentic AI", "Gemini AI", "Streamlit", "Python", "News Generation"],
       gradient: "from-purple-600 to-pink-600",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -334,152 +325,171 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
-              Python Task
+              Python Automation
             </h2>
             <div className="professional-divider mx-auto max-w-xs"></div>
           </div>
-          <div className="flex flex-wrap justify-center gap-8">
-            <div
-              className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-purple-500"
-              style={{ width: '400px' }}
-            >
-              <div className="relative overflow-hidden">
-                <img
-                  src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Python Pillow Digital Art"
-                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-80"></div>
-                <div className="absolute top-4 right-4">
-                  <Code className="h-6 w-6 text-white" />
+          <div className="space-y-8">
+            {/* Card 1: Send WhatsApp Message Using Python */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg" >
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
                 </div>
+                <h3 className="text-xl font-bold text-white mb-1">Send WhatsApp Message Using Python</h3>
+                <p className="text-gray-300 text-base">Automate sending personal WhatsApp messages using Python and the PyWhatKit library for real-time communication.</p>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                  Python Pillow Library Digital Art Task
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                  Creative digital art project using Python's Pillow library for image processing and manipulation, showcasing programming skills in digital creativity and image editing.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Python</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Pillow Library</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Digital Art</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Image Processing</span>
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Creative Coding</span>
-                </div>
-                <div className="flex space-x-4">
-                  <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                    <Github className="h-4 w-4" />
-                    View on GitHub
-                  </button>
-                  <a
-                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonprogramming-pillowlibrary-digitalart-activity-7351296305190596610-2xac?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="professional-btn flex items-center bg-purple-600 text-white hover:bg-purple-700"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View Task
-                  </a>
-                </div>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-whatsappbot-activity-7343508397134073856-hYj_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
               </div>
             </div>
-            <div
-              className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-green-500"
-              style={{ width: '400px' }}
-            >
-              <div className="relative overflow-hidden">
-                <img
-                  src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Python System Monitoring"
-                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-teal-600 opacity-80"></div>
-                <div className="absolute top-4 right-4">
-                  <Code className="h-6 w-6 text-white" />
+            {/* Card 2: Send WhatsApp Group Message Using Python */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg" >
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
                 </div>
+                <h3 className="text-xl font-bold text-white mb-1">Send WhatsApp Group Message Using Python</h3>
+                <p className="text-gray-300 text-base">Automate sending WhatsApp group messages using Python and the PyWhatKit library for efficient group communication.</p>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                  Python System Monitoring Task
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                  Advanced system monitoring script using Python for real-time system performance tracking, resource utilization monitoring, and automated system health checks.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Python</span>
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">System Monitoring</span>
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Performance Tracking</span>
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Resource Utilization</span>
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Automation</span>
-                </div>
-                <div className="flex space-x-4">
-                  <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                    <Github className="h-4 w-4" />
-                    View on GitHub
-                  </button>
-                  <a
-                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonproject-systemmonitoring-pythonscript-activity-7350849143411507201-m1bj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="professional-btn flex items-center bg-green-600 text-white hover:bg-green-700"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View Task
-                  </a>
-                </div>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-whatsappbot-activity-7343508397134073856-hYj_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
               </div>
             </div>
-            <div
-              className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-green-500"
-              style={{ width: '400px' }}
-            >
-              <div className="relative overflow-hidden">
-                <img
-                  src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Multi-Platform Python Automation Suite"
-                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-green-600 opacity-80"></div>
-                <div className="absolute top-4 right-4">
-                  <Code className="h-6 w-6 text-white" />
+            {/* Card 3: Send SMS Using Python */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg" >
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
                 </div>
+                <h3 className="text-xl font-bold text-white mb-1">Send SMS Using Python</h3>
+                <p className="text-gray-300 text-base">Use Python scripts and APIs to send real-time SMS alerts and reminders for communication automation.</p>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                  Multi-Platform Python Automation Suite
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                  Comprehensive automation portfolio including SMS alerts, automated phone calls, Instagram posting bot, and email automation using Python APIs.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Python</span>
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Twilio</span>
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">SMS</span>
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Instagram Bot</span>
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Email Automation</span>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/python_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+            {/* Card 4: Make Call Using Python */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg" >
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
                 </div>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://github.com/student-plk/python_task"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                  >
-                    <Github className="h-4 w-4" />
-                    View on GitHub
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="professional-btn flex items-center bg-green-600 text-white hover:bg-green-700"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View Task
-                  </a>
+                <h3 className="text-xl font-bold text-white mb-1">Make Call Using Python</h3>
+                <p className="text-gray-300 text-base">Trigger automated phone calls using Python and telephony APIs for voice communication automation.</p>
+              </div>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/python_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+            {/* Card 5: Send Email Using Python */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg" >
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
                 </div>
+                <h3 className="text-xl font-bold text-white mb-1">Send Email Using Python</h3>
+                <p className="text-gray-300 text-base">Automate sending emails using Python scripts and email APIs for alerts, updates, and bulk mailing.</p>
+              </div>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/python_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+            {/* Card 6: Post on Instagram Using Python */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg" >
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">Post on Instagram Using Python</h3>
+                <p className="text-gray-300 text-base">Automate posting images and captions to Instagram using Python and the Instabot library for social media automation.</p>
+              </div>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_python-automation-projectlearning-activity-7347178275963568128-6zM1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/python_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
               </div>
             </div>
           </div>
@@ -504,15 +514,26 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-white mb-1">Send WhatsApp Message Using JS</h3>
                 <p className="text-gray-300 text-base">Use WhatsApp web URL scheme or API to initiate a WhatsApp message from JavaScript.</p>
               </div>
-              <a
-                href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
-              >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                View on LinkedIn
-              </a>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/javascript_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
             </div>
 
             {/* Card 2: Show My Live Location */}
@@ -524,15 +545,26 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-white mb-1">Show My Live Location using JS</h3>
                 <p className="text-gray-300 text-base">Use JavaScript geolocation API to get and display the user's current location.</p>
               </div>
-              <a
-                href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
-              >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                View on LinkedIn
-              </a>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/javascript_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
             </div>
 
             {/* Card 3: Find Nearby Grocery Stores */}
@@ -544,15 +576,26 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-white mb-1">Find Nearby Grocery Stores using JS</h3>
                 <p className="text-gray-300 text-base">Use JavaScript and location services to find and display nearby grocery stores.</p>
               </div>
-              <a
-                href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
-              >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                View on LinkedIn
-              </a>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/javascript_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
             </div>
 
             {/* Card 4: Navigate Location */}
@@ -564,15 +607,26 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-white mb-1">Navigate Location using JS</h3>
                 <p className="text-gray-300 text-base">Use JavaScript to navigate to a specific location or address using web APIs or mapping services.</p>
               </div>
-              <a
-                href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-navigate-location-demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
-              >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                View on LinkedIn
-              </a>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/javascript_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
             </div>
 
             {/* Card 5: Capture Photo Using Webcam */}
@@ -584,15 +638,26 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-white mb-1">Capture Photo Using Webcam using JS</h3>
                 <p className="text-gray-300 text-base">Use JavaScript and the MediaDevices API to capture a photo using the user's webcam and display or save the image.</p>
               </div>
-              <a
-                href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-capture-photo-webcam-demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
-              >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                View on LinkedIn
-              </a>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/javascript_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
             </div>
 
             {/* Card 6: Record Video Directly from Browser */}
@@ -604,15 +669,26 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-white mb-1">Record Video Directly from Browser using JS</h3>
                 <p className="text-gray-300 text-base">Use JavaScript and the MediaRecorder API to record video directly from the user's browser using their webcam.</p>
               </div>
-              <a
-                href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-record-video-browser-demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
-              >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                View on LinkedIn
-              </a>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/javascript_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
             </div>
 
             {/* Card 7: Send Emails Using JS */}
@@ -624,15 +700,26 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-white mb-1">Send Emails Using JS</h3>
                 <p className="text-gray-300 text-base">Use JavaScript and email APIs (like EmailJS) to send emails directly from the browser or a web application.</p>
               </div>
-              <a
-                href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-send-emails-demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
-              >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                View on LinkedIn
-              </a>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/javascript_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
             </div>
 
             {/* Card 8: Capture Photo and Send Email Using JS */}
@@ -644,15 +731,26 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-white mb-1">Capture Photo and Send Email Using JS</h3>
                 <p className="text-gray-300 text-base">Use JavaScript to capture a photo using the webcam and send it as an email attachment using an email API.</p>
               </div>
-              <a
-                href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-capture-photo-send-email-demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 md:mt-0 md:ml-8 inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
-              >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                View on LinkedIn
-              </a>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_javascript-webdevelopment-geolocation-activity-7348235061013483520-4aKj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/javascript_task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
             </div>
           </div>
         </div>
