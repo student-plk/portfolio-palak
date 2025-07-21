@@ -51,14 +51,7 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_agenticai-geminiai-streamlit-activity-7350200982393319424-sVU9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
-    {
-      title: "Agentic AI with Twilio & LangChain",
-      description: "Voice automation system using Twilio and LangChain for intelligent conversational AI with real-time voice processing capabilities.",
-      stack: ["Twilio", "LangChain", "Python", "Voice AI", "Automation"],
-      gradient: "from-indigo-600 to-blue-600",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_twilio-langchain-voiceautomation-activity-7347595930780495872--pjA?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-    },
+
     {
       title: "EVENT PASS - Music Festival Booking",
       description: "Interactive music festival ticket booking webapp with real-time availability, pricing, and seamless booking experience.",
@@ -213,7 +206,7 @@ const Projects = () => {
                         className="professional-btn flex items-center justify-center gap-2 bg-blue-600 text-white hover:bg-blue-700"
                       >
                         <Linkedin className="h-4 w-4" />
-                        LinkedIn
+                        View on LinkedIn
                       </a>
                       <a
                         href={project.codeLink}
@@ -236,14 +229,14 @@ const Projects = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700"
+                      className="professional-btn flex items-center justify-center gap-2 bg-violet-600 text-white hover:bg-violet-700"
                     >
-                      <ExternalLink className="h-4 w-4 mr-2" />
+                      <ExternalLink className="h-4 w-4" />
                       View Project
                     </a>
                   ) : (
-                    <button className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700">
-                      <ExternalLink className="h-4 w-4 mr-2" />
+                    <button className="professional-btn flex items-center justify-center gap-2 bg-violet-600 text-white hover:bg-violet-700">
+                      <ExternalLink className="h-4 w-4" />
                       Live Demo
                     </button>
                   )}
@@ -262,10 +255,11 @@ const Projects = () => {
             </h2>
             <div className="professional-divider mx-auto max-w-xs"></div>
           </div>
-          <div className="flex justify-center">
+          <div className="symmetric-grid-3">
+            {/* DevOps Automation Pipeline Card */}
             <div
               className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-emerald-500`}
-              style={{ width: '350px', animationDelay: `0ms` }}
+              style={{ animationDelay: `0ms` }}
             >
               <div className="relative overflow-hidden">
                 <img
@@ -275,9 +269,10 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-teal-600 opacity-80"></div>
                 <div className="absolute top-4 right-4">
-                  <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8z" /></svg>
+                  <Code className="h-6 w-6 text-white" />
                 </div>
               </div>
+              
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   DevOps Automation Pipeline
@@ -285,6 +280,7 @@ const Projects = () => {
                 <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
                   Comprehensive CI/CD pipeline implementation with Docker containerization, automated testing, and deployment strategies for modern DevOps practices.
                 </p>
+                
                 <div className="flex flex-wrap gap-2 mb-4">
                   {["Docker", "CI/CD", "DevOps", "Automation", "Pipeline"].map((tech, techIndex) => (
                     <span
@@ -295,7 +291,17 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex space-x-4">
+                
+                <div className="flex space-x-4 flex-col gap-2">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_cicdpipeline-devops-docker-activity-7349672612215554048-h-jR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="professional-btn flex items-center justify-center gap-2 bg-[#0a66c2] text-white hover:bg-[#004182]"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                    View on LinkedIn
+                  </a>
                   <a
                     href="https://github.com/student-plk/Devops_project1"
                     target="_blank"
@@ -305,18 +311,171 @@ const Projects = () => {
                     <Github className="h-4 w-4" />
                     View on GitHub
                   </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Summer Projects 2025 Card */}
+            <div
+              className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-green-500`}
+              style={{ animationDelay: `100ms` }}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Summer Projects 2025"
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-teal-600 opacity-80"></div>
+                <div className="absolute top-4 right-4">
+                  <Code className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  Summer Projects 2025
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                  A practical all-in-one web application combining four mini-projects: Event Pass booking system, AI Disease Assistant, Command Dashboard for Linux/Docker/Windows, and Web Utility Toolkit with JavaScript features.
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {["Python", "JavaScript", "Streamlit", "AI/ML", "Web APIs", "Docker", "Linux Commands"].map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                
+                <div className="flex space-x-4 flex-col gap-2">
                   <a
-                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_cicdpipeline-devops-docker-activity-7349672612215554048-h-jR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_summerproject2025-webappproject-fullstackdeveloper-activity-7349078688757420034-q_NB?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700"
+                    className="professional-btn flex items-center justify-center gap-2 bg-[#0a66c2] text-white hover:bg-[#004182]"
                   >
-                    <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-6M15 10l-3-3-3 3m3-3v12" /></svg>
-                    View Project
+                    <Linkedin className="h-4 w-4" />
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/Summer-Project-2025"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                  >
+                    <Github className="h-4 w-4" />
+                    View on GitHub
                   </a>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Case Study Section */}
+      <section id="case-study" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
+              Case Study
+            </h2>
+            <div className="professional-divider mx-auto max-w-xs"></div>
+          </div>
+          {/* Case Study Cards */}
+          <div className="symmetric-grid-3">
+            {caseStudies.length === 0 ? (
+              <div className="text-center text-gray-600 dark:text-gray-300 text-lg w-full col-span-3">
+                <p>Case studies will be added here soon. Stay tuned!</p>
+              </div>
+            ) : (
+              caseStudies.map((study, index) => (
+                <div
+                  key={index}
+                  className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl ${[
+                    'border-violet-500',
+                    'border-blue-500',
+                    'border-emerald-500',
+                    'border-pink-500',
+                    'border-green-500',
+                    'border-teal-500',
+                    'border-cyan-500',
+                    'border-amber-500',
+                    'border-indigo-500',
+                    'border-orange-500',
+                    'border-red-500',
+                  ][index % 11]}`}
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={study.image}
+                      alt={study.title}
+                      className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-r ${study.gradient} opacity-80`}></div>
+                    <div className="absolute top-4 right-4">
+                      <Code className="h-6 w-6 text-white" />
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                      {study.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                      {study.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {study.stack.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex space-x-4">
+                      {study.codeLink ? (
+                        <a
+                          href={study.codeLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                        >
+                          <Github className="h-4 w-4" />
+                          View on GitHub
+                        </a>
+                      ) : (
+                        <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                          <Github className="h-4 w-4" />
+                          View on GitHub
+                        </button>
+                      )}
+                      {study.link ? (
+                        <a
+                          href={study.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="professional-btn flex items-center justify-center gap-2 bg-violet-600 text-white hover:bg-violet-700"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          View Case Study
+                        </a>
+                      ) : (
+                        <button className="professional-btn flex items-center justify-center gap-2 bg-violet-600 text-white hover:bg-violet-700">
+                          <ExternalLink className="h-4 w-4" />
+                          Live Demo
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </section>
@@ -492,9 +651,118 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+            {/* Card 7: Search on Google Using Python */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">Search on Google Using Python</h3>
+                <p className="text-gray-300 text-base">Automate Google searches using Python scripts and web automation libraries.</p>
+                <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Automation</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Google Search</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Web Automation</span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonproject-automationwithpython-googlesearch-activity-7350764809061122048-qaXE?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/python_google_search"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+            {/* Card 8: Read RAM Using Python */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">Read RAM Using Python</h3>
+                <p className="text-gray-300 text-base">Monitor and read your system's RAM usage in real-time using Python and the psutil library.</p>
+                <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">System Monitoring</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">RAM Usage</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">psutil</span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonproject-systemmonitoring-pythonscript-activity-7350849143411507201-m1bj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/python-ram-monitor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+            {/* Card 9: Digital Image Art Using Python */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">Digital Image Art Using Python</h3>
+                <p className="text-gray-300 text-base">Create digital art programmatically using Python and the Pillow (PIL) library for image generation and manipulation.</p>
+                <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Pillow</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Digital Art</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Image Processing</span>
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_pythonprogramming-pillowlibrary-digitalart-activity-7351296305190596610-2xac?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/python-digital-art"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       {/* JavaScript Automation Section */}
       <section id="javascript-automation" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -755,106 +1023,47 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      {/* Case Study Section */}
-      <section id="case-study" className="py-20 px-4 sm:px-6 lg:px-8">
+
+      {/* Machine Learning Automation Section */}
+      <section id="ml-automation" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
-              Case Study
+              Machine Learning Automation
             </h2>
             <div className="professional-divider mx-auto max-w-xs"></div>
           </div>
-          {/* Case Study Cards */}
-          <div className="symmetric-grid-3">
-            {caseStudies.length === 0 ? (
-              <div className="text-center text-gray-600 dark:text-gray-300 text-lg w-full col-span-3">
-                <p>Case studies will be added here soon. Stay tuned!</p>
-              </div>
-            ) : (
-              caseStudies.map((study, index) => (
-                <div
-                  key={index}
-                  className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl ${[
-                    'border-violet-500',
-                    'border-blue-500',
-                    'border-emerald-500',
-                    'border-pink-500',
-                    'border-green-500',
-                    'border-teal-500',
-                    'border-cyan-500',
-                    'border-amber-500',
-                    'border-indigo-500',
-                    'border-orange-500',
-                    'border-red-500',
-                  ][index % 11]}`}
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={study.image}
-                      alt={study.title}
-                      className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500" // Match project card image
-                    />
-                    <div className={`absolute inset-0 bg-gradient-to-r ${study.gradient} opacity-80`}></div>
-                    <div className="absolute top-4 right-4">
-                      <Code className="h-6 w-6 text-white" />
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                      {study.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                      {study.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {study.stack.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="flex space-x-4">
-                      {study.codeLink ? (
-                        <a
-                          href={study.codeLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                        >
-                          <Github className="h-4 w-4" />
-                          View on GitHub
-                        </a>
-                      ) : (
-                        <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                          <Github className="h-4 w-4" />
-                          View on GitHub
-                        </button>
-                      )}
-                      {study.link ? (
-                        <a
-                          href={study.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700"
-                        >
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          View Case Study
-                        </a>
-                      ) : (
-                        <button className="professional-btn flex items-center bg-violet-600 text-white hover:bg-violet-700">
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          Live Demo
-                        </button>
-                      )}
-                    </div>
-                  </div>
+          <div className="space-y-8">
+            {/* Card: LangChain Tool */}
+            <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+              <div>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
                 </div>
-              ))
-            )}
+                <h3 className="text-xl font-bold text-white mb-1">LangChain Tool</h3>
+                <p className="text-gray-300 text-base">Integrated Voice Communication using Agentic AI, Twilio & TTS. Python-based automation system for text-to-speech, automated voice calls, and LangChain's TwilioAPIWrapper.</p>
+              </div>
+              <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8">
+                <a
+                  href="https://www.linkedin.com/posts/palak-saini-7868b921b_twilio-langchain-voiceautomation-activity-7347595930780495872--pjA?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  View on LinkedIn
+                </a>
+                <a
+                  href="https://github.com/student-plk/langchain-twilio-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
