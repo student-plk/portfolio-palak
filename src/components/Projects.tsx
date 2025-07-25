@@ -51,7 +51,6 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_agenticai-geminiai-streamlit-activity-7350200982393319424-sVU9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
-
     {
       title: "EVENT PASS - Music Festival Booking",
       description: "Interactive music festival ticket booking webapp with real-time availability, pricing, and seamless booking experience.",
@@ -59,14 +58,6 @@ const Projects = () => {
       gradient: "from-pink-600 to-rose-600",
       image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
       link: "https://www.linkedin.com/posts/palak-saini-7868b921b_python-streamlit-webappdevelopment-activity-7342855025926230016-qENi?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
-    },
-    {
-      title: "Apache Web Server in Docker",
-      description: "Containerized Apache web server deployment with Docker for scalable and portable web hosting solutions.",
-      stack: ["Apache Server", "Docker", "Web Hosting", "Containerization", "DevOps"],
-      gradient: "from-cyan-600 to-blue-600",
-      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_apacheserver-dockerdeployment-webhosting-activity-7348256254839926785-Oz0c?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
     },
     {
       title: "Python Menu-Based RHEL Project",
@@ -373,6 +364,55 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+            {/* Microservices Architecture Card */}
+            <div className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Microservices Architecture Project"
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 opacity-80"></div>
+                <div className="absolute top-4 right-4">
+                  <Code className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  Microservices Architecture Project
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                  Built a production-grade microservices architecture using Flask, Docker, and Docker Compose. Developed independent user_service, containerized each service, orchestrated with Docker Compose, and tested REST API endpoints. Demonstrated real backend learning and DevOps skills.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Microservices</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Docker Compose</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">REST API</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Flask</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">DevOps</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_microservices-dockercompose-restapi-activity-7353836738395435009-Snu6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/microservices-architecture-demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -392,90 +432,255 @@ const Projects = () => {
                 <p>Case studies will be added here soon. Stay tuned!</p>
               </div>
             ) : (
-              caseStudies.map((study, index) => (
-                <div
-                  key={index}
-                  className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl ${[
-                    'border-violet-500',
-                    'border-blue-500',
-                    'border-emerald-500',
-                    'border-pink-500',
-                    'border-green-500',
-                    'border-teal-500',
-                    'border-cyan-500',
-                    'border-amber-500',
-                    'border-indigo-500',
-                    'border-orange-500',
-                    'border-red-500',
-                  ][index % 11]}`}
-                  style={{ animationDelay: `${index * 100}ms` }}
+              <>
+                {caseStudies.map((study, index) => (
+                  <div
+                    key={index}
+                    className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl ${[
+                      'border-violet-500',
+                      'border-blue-500',
+                      'border-emerald-500',
+                      'border-pink-500',
+                      'border-green-500',
+                      'border-teal-500',
+                      'border-cyan-500',
+                      'border-amber-500',
+                      'border-indigo-500',
+                      'border-orange-500',
+                      'border-red-500',
+                    ][index % 11]}`}
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={study.image}
+                        alt={study.title}
+                        className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-r ${study.gradient} opacity-80`}></div>
+                      <div className="absolute top-4 right-4">
+                        <Code className="h-6 w-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                        {study.title}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                        {study.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {study.stack.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex space-x-4">
+                        {study.codeLink ? (
+                          <a
+                            href={study.codeLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                          >
+                            <Github className="h-4 w-4" />
+                            View on GitHub
+                          </a>
+                        ) : (
+                          <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
+                            <Github className="h-4 w-4" />
+                            View on GitHub
+                          </button>
+                        )}
+                        {study.link ? (
+                          <a
+                            href={study.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="professional-btn flex items-center justify-center gap-2 bg-violet-600 text-white hover:bg-violet-700"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                            View Case Study
+                          </a>
+                        ) : (
+                          <button className="professional-btn flex items-center justify-center gap-2 bg-violet-600 text-white hover:bg-violet-700">
+                            <ExternalLink className="h-4 w-4" />
+                            Live Demo
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                {/* Linux Case Study Card */}
+                <div className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500`}
+                  style={{ animationDelay: `${caseStudies.length * 100}ms` }}
                 >
                   <div className="relative overflow-hidden">
                     <img
-                      src={study.image}
-                      alt={study.title}
+                      src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400"
+                      alt="Why Top Companies Use Linux"
                       className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
                     />
-                    <div className={`absolute inset-0 bg-gradient-to-r ${study.gradient} opacity-80`}></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 opacity-80"></div>
                     <div className="absolute top-4 right-4">
                       <Code className="h-6 w-6 text-white" />
                     </div>
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                      {study.title}
+                      Why Top Companies Use Linux: Power, Flexibility, and Control
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
-                      {study.description}
+                      Linux is the backbone of modern tech giants like Google, AWS, Netflix, and Meta. This case study explores why Linux is chosen for its open-source nature, security, scalability, and its role in cloud, DevOps, and enterprise systems.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {study.stack.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium"
-                        >
-                          {tech}
-                        </span>
-                      ))}
+                      <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Linux</span>
+                      <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Open Source</span>
+                      <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Cloud Computing</span>
+                      <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">DevOps</span>
+                      <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">System Admin</span>
                     </div>
                     <div className="flex space-x-4">
-                      {study.codeLink ? (
-                        <a
-                          href={study.codeLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                        >
-                          <Github className="h-4 w-4" />
-                          View on GitHub
-                        </a>
-                      ) : (
-                        <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                          <Github className="h-4 w-4" />
-                          View on GitHub
-                        </button>
-                      )}
-                      {study.link ? (
-                        <a
-                          href={study.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="professional-btn flex items-center justify-center gap-2 bg-violet-600 text-white hover:bg-violet-700"
-                        >
-                          <ExternalLink className="h-4 w-4" />
-                          View Case Study
-                        </a>
-                      ) : (
-                        <button className="professional-btn flex items-center justify-center gap-2 bg-violet-600 text-white hover:bg-violet-700">
-                          <ExternalLink className="h-4 w-4" />
-                          Live Demo
-                        </button>
-                      )}
+                      <a
+                        href="https://github.com/student-plk/linux-case-study"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                      >
+                        <Github className="h-4 w-4" />
+                        View on GitHub
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/posts/palak-saini-7868b921b_linux-opensource-cloudcomputing-activity-7352268492475105280-N28f?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="professional-btn flex items-center justify-center gap-2 bg-violet-600 text-white hover:bg-violet-700"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        View Case Study
+                      </a>
                     </div>
                   </div>
                 </div>
-              ))
+              </>
             )}
+          </div>
+        </div>
+      </section>
+      {/* Docker Task Section */}
+      <section id="docker-task" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
+              Docker Task
+            </h2>
+            <div className="professional-divider mx-auto max-w-xs"></div>
+          </div>
+          {/* Docker Task Cards */}
+          <div className="symmetric-grid-3">
+            {/* Docker-in-Docker Card */}
+            <div className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Docker-in-Docker (DIND) Setup on RHEL 9"
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 opacity-80"></div>
+                <div className="absolute top-4 right-4">
+                  <Code className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  Docker-in-Docker (DIND) Setup on RHEL 9
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                  Configured Docker-in-Docker (DIND) on Red Hat Enterprise Linux 9 for CI/CD, container orchestration, and automated builds. Enabled privileged mode, verified nested Docker, and supported advanced DevOps workflows.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Docker</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">DIND</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">RHEL 9</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">DevOps</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">CI/CD</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_dockerindocker-dind-rhel9-activity-7351484551539441664-ie6R?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/docker-in-docker-demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Apache Web Server in Docker Card */}
+            <div className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Apache Web Server in Docker"
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 opacity-80"></div>
+                <div className="absolute top-4 right-4">
+                  <Code className="h-6 w-6 text-white" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  Apache Web Server in Docker
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                  Containerized Apache web server deployment with Docker for scalable and portable web hosting solutions.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Apache Server</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Docker</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Web Hosting</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Containerization</span>
+                  <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">DevOps</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_apacheserver-dockerdeployment-webhosting-activity-7348256254839926785-Oz0c?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/apache-docker-demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1020,6 +1225,47 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+
+            {/* JavaScript Automation Cards */}
+            <div className="space-y-8">
+              {/* Existing JS automation cards ... */}
+              {/* ReactJS Lottie Animations Card */}
+              <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+                <div>
+                  <div className="flex items-center space-x-4 mb-2">
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">ReactJS Lottie Animations using JS</h3>
+                  <p className="text-gray-300 text-base">Integrated Lottie animations in ReactJS for interactive, lightweight, and professional web experiences. Learned to use lottie-react, import JSON animations, and enhance frontend engagement.</p>
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">ReactJS</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Lottie</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">JavaScript</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Frontend</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_reactjs-lottieanimations-frontenddevelopment-activity-7354075122875412480-ISIL?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/reactjs-lottie-animations"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1062,6 +1308,46 @@ const Projects = () => {
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
                   View on GitHub
                 </a>
+              </div>
+            </div>
+            {/* Machine Learning Automation Cards */}
+            <div className="space-y-8">
+              {/* Existing ML cards ... */}
+              {/* Linear Regression Visualization Card */}
+              <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+                <div>
+                  <div className="flex items-center space-x-4 mb-2">
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">Linear Regression Visualization</h3>
+                  <p className="text-gray-300 text-base">Visualized error in Linear Regression using SalaryData.csv. Trained a model, predicted salaries, plotted Actual vs Predicted, and Residuals vs Predicted. Demonstrated model evaluation and workflow in supervised learning.</p>
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Machine Learning</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Linear Regression</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Visualization</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_machinelearning-linearregression-mlvisualization-activity-7351858264050925568--k5t?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/linear-regression-visualization"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
               </div>
             </div>
           </div>
