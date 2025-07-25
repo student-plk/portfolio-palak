@@ -49,7 +49,8 @@ const Projects = () => {
       stack: ["Agentic AI", "Gemini AI", "Streamlit", "Python", "News Generation"],
       gradient: "from-purple-600 to-pink-600",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_agenticai-geminiai-streamlit-activity-7350200982393319424-sVU9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+      link: "https://www.linkedin.com/posts/palak-saini-7868b921b_agenticai-geminiai-streamlit-activity-7350200982393319424-sVU9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4",
+      codeLink: "https://github.com/student-plk/ai-powered-news-generator"
     },
     {
       title: "EVENT PASS - Music Festival Booking",
@@ -176,39 +177,17 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-4 flex-col gap-2">
-                  {(project.codeLink && (project.stack.includes('JavaScript') || index >= projects.length - 2)) ? (
-                    <>
-                      <a
-                        href={project.codeLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                      >
-                        <Github className="h-4 w-4" />
-                        View on GitHub
-                      </a>
-                    </>
-                  ) : project.codeLink ? (
-                    <>
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="professional-btn flex items-center justify-center gap-2 bg-blue-600 text-white hover:bg-blue-700"
-                      >
-                        <Linkedin className="h-4 w-4" />
-                        View on LinkedIn
-                      </a>
-                      <a
-                        href={project.codeLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                      >
-                        <Github className="h-4 w-4" />
-                        View on GitHub
-                      </a>
-                    </>
+                  {/* Only show GitHub button if codeLink exists */}
+                  {project.codeLink ? (
+                    <a
+                      href={project.codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                    >
+                      <Github className="h-4 w-4" />
+                      View on GitHub
+                    </a>
                   ) : (
                     <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
                       <Github className="h-4 w-4" />
@@ -365,7 +344,9 @@ const Projects = () => {
               </div>
             </div>
             {/* Microservices Architecture Card */}
-            <div className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500">
+            <div className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500`}
+              style={{ animationDelay: `${caseStudies.length * 100}ms` }}
+            >
               <div className="relative overflow-hidden">
                 <img
                   src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400"
@@ -479,23 +460,7 @@ const Projects = () => {
                           </span>
                         ))}
                       </div>
-                      <div className="flex space-x-4">
-                        {study.codeLink ? (
-                          <a
-                            href={study.codeLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                          >
-                            <Github className="h-4 w-4" />
-                            View on GitHub
-                          </a>
-                        ) : (
-                          <button className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600" disabled>
-                            <Github className="h-4 w-4" />
-                            View on GitHub
-                          </button>
-                        )}
+                      <div className="flex justify-center">
                         {study.link ? (
                           <a
                             href={study.link}
@@ -545,16 +510,7 @@ const Projects = () => {
                       <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">DevOps</span>
                       <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">System Admin</span>
                     </div>
-                    <div className="flex space-x-4">
-                      <a
-                        href="https://github.com/student-plk/linux-case-study"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="professional-btn flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                      >
-                        <Github className="h-4 w-4" />
-                        View on GitHub
-                      </a>
+                    <div className="flex justify-center">
                       <a
                         href="https://www.linkedin.com/posts/palak-saini-7868b921b_linux-opensource-cloudcomputing-activity-7352268492475105280-N28f?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
                         target="_blank"
@@ -584,7 +540,9 @@ const Projects = () => {
           {/* Docker Task Cards */}
           <div className="symmetric-grid-3">
             {/* Docker-in-Docker Card */}
-            <div className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500">
+            <div className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500`}
+              style={{ animationDelay: `${caseStudies.length * 100}ms` }}
+            >
               <div className="relative overflow-hidden">
                 <img
                   src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400"
@@ -633,7 +591,9 @@ const Projects = () => {
               </div>
             </div>
             {/* Apache Web Server in Docker Card */}
-            <div className="scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500">
+            <div className={`scroll-reveal professional-card overflow-hidden transition-all duration-300 border border-[1.5px] rounded-xl border-blue-500`}
+              style={{ animationDelay: `${caseStudies.length * 100}ms` }}
+            >
               <div className="relative overflow-hidden">
                 <img
                   src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400"
