@@ -34,7 +34,7 @@ const Skills = () => {
       title: "Web Development",
       icon: Globe,
       gradient: "from-green-600 to-emerald-600",
-      skills: ["HTML", "Flask", "CSS"],
+      skills: ["HTML", "Flask", "CSS", "React"],
       description: "Frontend and backend web development technologies"
     },
     {
@@ -45,10 +45,10 @@ const Skills = () => {
       description: "Relational and NoSQL database management systems"
     },
     {
-      title: "Tools & Development",
+      title: "Tools & DevOps",
       icon: Wrench,
       gradient: "from-orange-600 to-red-600",
-      skills: ["Git", "GitHub", "Docker", "Kubernetes", "Jenkins"],
+      skills: ["Git", "GitHub", "Docker", "Kubernetes", "Jenkins", "Ansible", "NLP", "Prometheus", "Terraform"],
       description: "Version control, containerization, and CI/CD tools"
     },
     {

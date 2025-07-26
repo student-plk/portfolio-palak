@@ -70,12 +70,12 @@ const Contact = () => {
 
         <div className="symmetric-grid-2 items-stretch">
           {/* Contact Information */}
-          <div className="scroll-reveal space-y-8 border border-[1.5px] rounded-xl border-violet-500">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+          <div className="scroll-reveal space-y-8 border border-[1.5px] rounded-xl border-violet-500 p-8 md:p-10 lg:p-12">
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 Let's Connect
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-8">
+              <p className="text-gray-600 dark:text-gray-300 mb-8 text-base md:text-lg">
                 I'm always open to discussing new opportunities, interesting projects, 
                 or just having a chat about technology and innovation.
               </p>

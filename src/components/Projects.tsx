@@ -533,7 +533,7 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 neon-blink-title">
-              Docker Task
+              Docker Specific
             </h2>
             <div className="professional-divider mx-auto max-w-xs"></div>
           </div>
@@ -1272,7 +1272,46 @@ const Projects = () => {
             </div>
             {/* Machine Learning Automation Cards */}
             <div className="space-y-8">
-              {/* Existing ML cards ... */}
+              {/* Sentiment Analysis with TextBlob Card */}
+              <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+                <div>
+                  <div className="flex items-center space-x-4 mb-2">
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">Sentiment Analysis with TextBlob</h3>
+                  <p className="text-gray-300 text-base">Complete sentiment analysis pipeline using TextBlob library in Python. Real-time sentiment detection, Amazon Alexa reviews analysis, sentiment classification, and data visualization. Extracted emotions and opinions from user reviews using NLP fundamentals.</p>
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Sentiment Analysis</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">NLP</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">TextBlob</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Data Visualization</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_sentimentanalysis-nlp-textblob-activity-7354412645724098560-Qxca?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/sentiment-analysis-textblob"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+
+
+
               {/* Linear Regression Visualization Card */}
               <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
                 <div>
@@ -1300,6 +1339,234 @@ const Projects = () => {
                   </a>
                   <a
                     href="https://github.com/student-plk/linear-regression-visualization"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+
+              {/* Analyzing Real Review Data Card */}
+              <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+                <div>
+                  <div className="flex items-center space-x-4 mb-2">
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">Analyzing Real Review Data</h3>
+                  <p className="text-gray-300 text-base">Explored real Amazon Alexa reviews dataset in .tsv format. Calculated sentiment polarity using TextBlob for each review and added new Polarity column to DataFrame. Demonstrated scalable sentiment analysis from single sentences to thousands of real-world reviews.</p>
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Data Analysis</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">TextBlob</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Pandas</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Sentiment Analysis</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_sentimentanalysis-nlp-textblob-activity-7354412645724098560-Qxca?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/sentiment-analysis-textblob"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+
+              {/* Sentiment Classification Card */}
+              <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+                <div>
+                  <div className="flex items-center space-x-4 mb-2">
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">Sentiment Classification</h3>
+                  <p className="text-gray-300 text-base">Implemented logic to classify reviews as Positive, Negative, or Neutral based on polarity values. Added Sentiment_Label column to store human-readable sentiment categories. Essential for business dashboards, analytics tools, and social media monitoring applications.</p>
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Classification</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">TextBlob</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Polarity Analysis</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Data Processing</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_sentimentanalysis-nlp-textblob-activity-7354412645724098560-Qxca?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/sentiment-analysis-textblob"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+
+              {/* Visualizing Sentiment Insights Card */}
+              <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+                <div>
+                  <div className="flex items-center space-x-4 mb-2">
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">Visualizing Sentiment Insights</h3>
+                  <p className="text-gray-300 text-base">Created bar charts to visualize sentiment trends showing count of Positive, Neutral, and Negative reviews. Made sentiment data crystal clear for business insights, helping identify whether customers were mostly happy, dissatisfied, or neutral about products.</p>
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Data Visualization</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Matplotlib</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Seaborn</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Business Analytics</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_sentimentanalysis-nlp-textblob-activity-7354412645724098560-Qxca?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/sentiment-analysis-textblob"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+
+              {/* Lemmatization with NLTK Card */}
+              <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+                <div>
+                  <div className="flex items-center space-x-4 mb-2">
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">Lemmatization with NLTK</h3>
+                  <p className="text-gray-300 text-base">Built a script to convert words in a sentence to their base form (lemma) using WordNetLemmatizer. For example, "running" became "run" and "eating" became "eat". This task taught how to reduce words to their core meaning, crucial for search engines, chatbots, and sentiment analysis.</p>
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">NLTK</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Lemmatization</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">WordNetLemmatizer</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Text Preprocessing</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_nltk-machinelearning-nlp-activity-7354563615552634880-JMK3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/nltk-nlp-tasks"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+
+              {/* Tokenization using NLTK Card */}
+              <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+                <div>
+                  <div className="flex items-center space-x-4 mb-2">
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">Tokenization using NLTK</h3>
+                  <p className="text-gray-300 text-base">Used NLTK's word_tokenize function to break down sentences into individual words and punctuation. This is the first step in almost every NLP pipeline, helping understand how raw text is split into processable parts like "I", "am", "studying", etc.</p>
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">NLTK</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Tokenization</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">word_tokenize</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Text Processing</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_nltk-machinelearning-nlp-activity-7354563615552634880-JMK3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/nltk-nlp-tasks"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8.59.11.8-.26.8-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.81.58C20.56 20.87 24 16.84 24 12c0-5.52-4.48-10-10-10z"/></svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+
+              {/* Part-of-Speech using NLTK Card */}
+              <div className="bg-[#232b39] rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between shadow-lg">
+                <div>
+                  <div className="flex items-center space-x-4 mb-2">
+                    <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Completed</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">Part-of-Speech using NLTK</h3>
+                  <p className="text-gray-300 text-base">Analyzed each word in a sentence and tagged it with its grammatical role using NLTK's POS tagger. For example, "spaCy" was recognized as a proper noun and "powerful" as an adjective. This step is crucial in building intelligent text-based applications that understand sentence structure.</p>
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">NLTK</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">POS Tagging</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Grammar Analysis</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Text Understanding</span>
+                    <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-full text-xs font-medium">Python</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 mt-4 md:mt-0 md:ml-8 items-end">
+                  <a
+                    href="https://www.linkedin.com/posts/palak-saini-7868b921b_nltk-machinelearning-nlp-activity-7354563615552634880-JMK3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADd8DBYBYlk5UNY5NMFs0iIe53dWMgIfAn4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-[#0a66c2] text-white font-semibold w-full px-6 py-2 rounded-full hover:bg-[#004182] transition whitespace-nowrap"
+                  >
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    View on LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/student-plk/nltk-nlp-tasks"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold w-full px-6 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition whitespace-nowrap"
