@@ -105,12 +105,18 @@ const Contact = () => {
 
             {/* Resume Download */}
             <div className="pt-8">
-              <button className="professional-btn inline-flex items-center bg-gradient-to-r from-violet-600 to-purple-600 text-white hover:from-violet-700 hover:to-purple-700 shadow-lg">
+              <a
+                href="/Palak_Saini_resume.pdf"
+                download="Palak_Saini_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="professional-btn inline-flex items-center bg-gradient-to-r from-violet-600 to-purple-600 text-white hover:from-violet-700 hover:to-purple-700 shadow-lg"
+              >
                 <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
                 Download Resume
-              </button>
+              </a>
             </div>
           </div>
 

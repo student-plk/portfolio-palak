@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { ChevronDown, Download, Linkedin, Github, Mail } from 'lucide-react';
-import profileImg from '../assets/profile.jpeg';
+import profileImg from '../assets/Profile.jpeg';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -68,11 +68,11 @@ const Hero = () => {
           {/* Right content - Profile photo */}
           <div className="flex justify-center lg:justify-end">
             <div className="professional-frame flower-hover-effect border-2 border-violet-400 rounded-2xl transition-shadow duration-300">
-              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl relative">
+              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl relative bg-gray-200 dark:bg-gray-900">
                 <img
                   src={profileImg}
                   alt="Palak Saini"
-                  className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-500 z-10 relative"
+                  className="w-full h-full object-contain transition-transform duration-500 z-10 relative"
                   onMouseEnter={() => {
                     const flower = document.querySelector('.flower-effect');
                     if (flower && !flower.classList.contains('animate-flower')) {
